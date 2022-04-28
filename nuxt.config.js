@@ -47,11 +47,23 @@ export default {
             file: "en-US.js",
           },
         ],
+        parsePages: false,
+        pages: {
+          "about-us/index": {
+            it: "/su-di-noi",
+            en: "/about-us",
+          },
+          'apartments/index': {
+            it: "/appartamenti",
+            en: "/apartments",
+          }
+        },
+        baseUrl: "https://bb.network",
+        strategy: "prefix",
         langDir: "lang/",
         defaultLocale: "it",
         detectBrowserLanguage: false,
         lazy: true,
-        // baseUrl: "https://www.retrospettivi.com",
       },
     ],
   ],

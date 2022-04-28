@@ -6,11 +6,11 @@
       </div>
 
       <div class="flex items-center gap-6 h-full">
-        <nuxt-link exact to="/about-us">ABOUT US</nuxt-link>
-        <nuxt-link to="/">FOR UNIVERSITY</nuxt-link>
+        <nuxt-link exact :to="localePath('about-us')">ABOUT US</nuxt-link>
+        <nuxt-link to="/for-university">FOR UNIVERSITY</nuxt-link>
         <nuxt-link to="/">FOR LANDLORD</nuxt-link>
         <nuxt-link to="/">FOR STUDENTS</nuxt-link>
-        <nuxt-link to="/">APARTMENTS</nuxt-link>
+        <nuxt-link :to="localePath('apartments')">APARTMENTS</nuxt-link>
         <nuxt-link to="/">CONTACTS</nuxt-link>
         <nuxt-link to="/">IT</nuxt-link>
       </div>

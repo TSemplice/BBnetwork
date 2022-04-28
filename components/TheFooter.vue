@@ -24,6 +24,12 @@
           <a class="uppercase" href="">Cookie Policy</a>
           <a class="uppercase" href="">Credits</a>
         </div>
+
+        <div class="flex gap-8">
+          <a class="uppercase" href="">IG</a>
+          <a class="uppercase" href="">FB</a>
+          <a class="uppercase" href="">IN</a>
+        </div>
       </div>
     </div>
   </div>
