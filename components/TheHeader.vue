@@ -1,17 +1,17 @@
 <template>
   <div>
     <div class="bg-white fixed w-full top-0 left-0 h-12 px-12 py-4 flex justify-between z-40">
-      <div>
+      <nuxt-link :to="localePath('/')">
         <img src="~assets/images/logo-black.svg" class="h-full">
-      </div>
+      </nuxt-link>
 
-      <div class="flex items-center gap-6 h-full">
-        <nuxt-link exact :to="localePath('about-us')">ABOUT US</nuxt-link>
-        <nuxt-link to="/for-university">FOR UNIVERSITY</nuxt-link>
-        <nuxt-link to="/">FOR LANDLORD</nuxt-link>
-        <nuxt-link to="/">FOR STUDENTS</nuxt-link>
+      <div class="nav flex items-center gap-6 h-full">
+        <nuxt-link :to="localePath('about-us')">ABOUT US</nuxt-link>
+        <nuxt-link :to="localePath('for-university')">FOR UNIVERSITY</nuxt-link>
+        <nuxt-link :to="localePath('for-landlords')">FOR LANDLORD</nuxt-link>
+        <nuxt-link :to="localePath('for-students')">FOR STUDENTS</nuxt-link>
         <nuxt-link :to="localePath('apartments')">APARTMENTS</nuxt-link>
-        <nuxt-link to="/">CONTACTS</nuxt-link>
+        <nuxt-link :to="localePath('contacts')">CONTACTS</nuxt-link>
         <nuxt-link to="/">IT</nuxt-link>
       </div>
     </div>
@@ -28,7 +28,7 @@ export default {
 a {
   @apply text-black uppercase font-bold;
 }
-.nuxt-link-active {
-  /* @apply bg-black text-white; */
+.nav .nuxt-link-active {
+  @apply bg-black text-white;
 }
 </style>

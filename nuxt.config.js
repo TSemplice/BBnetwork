@@ -18,7 +18,7 @@ export default {
   css: ["@/assets/css/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{src: '~/plugins/locomotive.js', ssr: false}],
+  plugins: [{ src: "~/plugins/locomotive.js", ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -53,10 +53,26 @@ export default {
             it: "/su-di-noi",
             en: "/about-us",
           },
-          'apartments/index': {
+          "apartments/index": {
             it: "/appartamenti",
             en: "/apartments",
-          }
+          },
+          "for-university/index": {
+            it: "/per-universita",
+            en: "/for-university",
+          },
+          "for-landlords/index": {
+            it: "/per-proprietari",
+            en: "/for-landlords",
+          },
+          "for-students/index": {
+            it: "/per-studenti",
+            en: "/for-students",
+          },
+          "contacts/index": {
+            it: "/contatti",
+            en: "/contacts",
+          },
         },
         baseUrl: "https://bb.network",
         strategy: "prefix",
@@ -89,6 +105,8 @@ export default {
   build: {
     postcss: {
       plugins: {
+        "postcss-import": {},
+        "tailwindcss/nesting": {},
         tailwindcss: {},
         autoprefixer: {},
       },

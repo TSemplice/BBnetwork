@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64.154" height="64.128" viewBox="0 0 64.154 64.128">
-  <g id="arrow-black" transform="translate(-18.25 -17.873)">
-    <path id="Tracciato_1" data-name="Tracciato 1" d="M79.82,51H20.25a1,1,0,0,1,0-2H79.82a1,1,0,0,1,0,2Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="2"/>
-    <path id="Tracciato_2" data-name="Tracciato 2" d="M80.25,51a1,1,0,0,1-.71-.3l-29.79-30a1,1,0,0,1,1.42-1.41h0L81,49.3a1,1,0,0,1-.01,1.41.984.984,0,0,1-.7.29Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="2"/>
-    <path id="Tracciato_3" data-name="Tracciato 3" d="M50.46,81a1,1,0,0,1-1-1,.984.984,0,0,1,.29-.7l29.79-30A1.011,1.011,0,0,1,81,50.7l-29.79,30A1.01,1.01,0,0,1,50.46,81Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="2"/>
-  </g>
-</svg>
