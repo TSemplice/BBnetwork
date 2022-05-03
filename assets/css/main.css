@@ -22,10 +22,6 @@
     @apply font-primary text-black font-normal bg-white;
   }
 
-  body {
-    @apply overflow-x-hidden;
-  }
-
   svg {
     @apply w-full h-full object-cover pointer-events-none;
   }
@@ -72,6 +68,9 @@
 @layer components {
   .button-primary {
     @apply bg-black text-gray-300 px-6 font-bold inline-flex justify-center items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-black after:bg-center after:bg-no-repeat;
+  }
+  .button-primary-simple {
+    @apply bg-black text-gray-300 px-6 font-bold inline-flex justify-center items-center rounded-full relative h-12;
   }
 }
 

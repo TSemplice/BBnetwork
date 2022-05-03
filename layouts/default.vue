@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div data-scroll-container>
     <TheHeader />
-    <nuxt class="mt-12"/>
-    <TheFooter class="mt-24"/>
+    <nuxt class="!pt-12 pb-24" />
+    <TheFooter/>
   </div>
 </template>
 
