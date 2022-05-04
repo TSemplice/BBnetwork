@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="px-6 h-[600px]">
+    <div class="xl:px-6 h-[600px]">
       <div
         class="h-full rounded-b-xl bg-[url(/images/contacts1.jpg)] bg-center bg-cover bg-no-repeat"
       />
     </div>
 
     <div class="mt-12 container">
-      <h1 class="w-1/2 text-7xl">BB Network, leaders in Rome student housing.</h1>
+      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">BB Network, leaders in Rome student housing.</h1>
 
       <div class="mt-12">
         <p class="font-bold">BB Network srl</p>

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="px-6 h-[600px]">
+    <div class="xl:px-6 h-[600px]">
       <div
         class="h-full rounded-b-xl bg-[url(/images/apartments1.jpg)] bg-center bg-cover bg-no-repeat"
       />
     </div>
 
     <div class="mt-24 container">
-      <p class="text-2xl leading-10">
+      <p class="text-lg xl:text-2xl xl:leading-10">
         <strong>BB Network</strong> has been providing quality student
         accommodation <strong>in Rome and Spain</strong> for decades. Our
         student housing is carefully chosen based on their location, comfortable
@@ -22,7 +22,7 @@
     <section class="mt-24" data-scroll-section>
       <div 
         data-scroll-speed="0.5"
-        class="flex gap-8"
+        class="flex gap-8 overflow-clip"
       >
         <nuxt-img
           src="/images/apartments1.jpg"
@@ -47,9 +47,9 @@
       </div>
     </section>
 
-    <section class="mt-24 py-12">
+    <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl">CONTACT US ABOUT STUDENT HOUSING</h3>
+        <h3 class="text-2xl text-center">CONTACT US ABOUT STUDENT HOUSING</h3>
         <a href="mailto:" class="button-primary-simple">Email Us</a>
       </div>
     </section>

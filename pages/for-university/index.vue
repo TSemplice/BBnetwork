@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="mt-12 container">
-      <h1 class="w-1/2 text-7xl">Cerchi degli alloggi per i tuoi studenti?</h1>
+      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">Cerchi degli alloggi per i tuoi studenti?</h1>
 
-      <div class="mt-24 grid grid-cols-2 gap-44">
+      <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-44">
         <div class="text-lg">
           <p>
             You’ve decided to study in one of the most beautiful cities in the
@@ -35,7 +35,7 @@
     />
 
     <div class="mt-24 container">
-      <div class="grid grid-cols-2 gap-40">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40 gap-y-12">
         <div class="flex flex-col gap-8">
           <p>01.</p>
           <h3 class="text-2xl">Servizio di pulizia</h3>
@@ -62,7 +62,7 @@
     <section class="mt-24" data-scroll-section>
       <div 
         data-scroll-speed="0.5"
-        class="flex gap-8"
+        class="flex gap-8 overflow-clip"
       >
         <nuxt-img
           src="/images/apartments1.jpg"
@@ -88,7 +88,7 @@
     </section>
 
     <section class="mt-24 container">
-      <div class="grid grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
         <div class="flex flex-col gap-6">
           <h3 class="text-6xl">FAQ</h3>
           <h4 class="text-2xl">FOR UNIVERSITY</h4>
@@ -99,9 +99,9 @@
       </div>
     </section>
 
-    <section class="mt-24 py-12">
+    <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl">CONTACT US ABOUT STUDENT HOUSING</h3>
+        <h3 class="text-2xl text-center">CONTACT US ABOUT STUDENT HOUSING</h3>
         <a href="mailto:" class="button-primary-simple">Email Us</a>
       </div>
     </section>

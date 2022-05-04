@@ -1,19 +1,19 @@
 <template>
   <div>
-    <div class="px-6 h-[600px]">
+    <div class="xl:px-6 h-[600px]">
       <div
         class="h-full rounded-b-xl bg-[url(/images/about1.jpg)] bg-center bg-cover bg-no-repeat filter brightness-150"
       />
     </div>
 
     <div class="mt-12 container">
-      <h1 class="w-1/2 text-7xl">
+      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">
         “Welcome to Rome student housing - your home away from home”
       </h1>
     </div>
 
-    <div class="mt-24 grid grid-cols-2 gap-44 container">
-      <div class="text-lg pr-24">
+    <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-x-44 gap-y-12 container">
+      <div class="text-lg xl:pr-24">
         <p>
           You’ve decided to study in one of the most beautiful cities in the
           world, <strong>Rome!</strong> Enjoy your stay to the fullest with one
@@ -46,14 +46,14 @@
     </div>
 
     <div class="mt-24 container">
-      <div class="grid grid-cols-12">
-        <div class="col-start-3 col-span-2">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6">
+        <div class="xl:col-start-3 xl:col-span-2">
           <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
           <nuxt-link class="mt-4 button-primary" to="/"
             >Discover more</nuxt-link
           >
         </div>
-        <div class="col-span-6 col-start-6">
+        <div class="xl:col-span-6 xl:col-start-6">
           <p class="underline uppercase text-3xl">
             Connects Students to house in rome
           </p>
@@ -64,14 +64,14 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-12 mt-20">
-        <div class="col-start-3 col-span-2">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20">
+        <div class="xl:col-start-3 xl:col-span-2">
           <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
           <nuxt-link class="mt-4 button-primary" to="/"
             >Discover more</nuxt-link
           >
         </div>
-        <div class="col-span-5 col-start-6">
+        <div class="xl:col-span-6 xl:col-start-6">
           <p class="underline uppercase text-3xl">
             Connects Students to house in rome
           </p>
@@ -82,14 +82,14 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-12 mt-20">
-        <div class="col-start-3 col-span-2">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20">
+        <div class="xl:col-start-3 xl:col-span-2">
           <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
           <nuxt-link class="mt-4 button-primary" to="/"
             >Discover more</nuxt-link
           >
         </div>
-        <div class="col-span-5 col-start-6">
+        <div class="xl:col-span-6 xl:col-start-6">
           <p class="underline uppercase text-3xl">
             Connects Students to house in rome
           </p>
