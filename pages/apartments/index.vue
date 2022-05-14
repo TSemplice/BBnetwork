@@ -19,30 +19,27 @@
       </p>
     </div>
 
-    <section class="mt-24" data-scroll-section>
-      <div 
-        data-scroll-speed="0.5"
-        class="flex gap-8 overflow-clip"
-      >
+    <section class="mt-24 overflow-hidden relative">
+      <div class="flex flex-nowrap gap-8 first-of-type:mt-0 mt-4" :class="`selector${i}`" v-for="i in 5" :key="i">
         <nuxt-img
           src="/images/apartments1.jpg"
           format="webp"
-          class="w-1/3 rounded-2xl"
+          class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
         <nuxt-img
           src="/images/apartments1.jpg"
           format="webp"
-          class="w-1/3 rounded-2xl"
+          class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
         <nuxt-img
           src="/images/apartments1.jpg"
           format="webp"
-          class="w-1/3 rounded-2xl"
+          class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
         <nuxt-img
           src="/images/apartments1.jpg"
           format="webp"
-          class="w-1/3 rounded-2xl"
+          class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
       </div>
     </section>
@@ -100,17 +97,109 @@ export default {
 
   data() {
     return {
-      scroll: undefined
-    }
+      scroll: undefined,
+    };
   },
 
   mounted() {
-    this.scroll = new this.$LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-      direction: "horizontal"
+    this.$lax.init(); // Add a driver that we use to control our animations
+    this.$lax.addDriver(
+      "scrollY1",
+      () => {
+        return window.scrollY/3;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+    this.$lax.addDriver(
+      "scrollY2",
+      () => {
+        return window.scrollY/3;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+    this.$lax.addDriver(
+      "scrollY3",
+      () => {
+        return window.scrollY/3;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+    this.$lax.addDriver(
+      "scrollY4",
+      () => {
+        return window.scrollY/3;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+    this.$lax.addDriver(
+      "scrollY5",
+      () => {
+        return window.scrollY/3;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+
+    // Add animation bindings to elements
+    this.$lax.addElements(".selector1", {
+      scrollY1: {
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [-500, 0],
+          {inertia: 2}
+        ],
+      },
+    });
+    this.$lax.addElements(".selector2", {
+      scrollY2: {
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [0, -500],
+          {inertia: 2}
+        ],
+      },
+    });
+    this.$lax.addElements(".selector3", {
+      scrollY3: {
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [-500, 0],
+          {inertia: 2}
+        ],
+      },
+    });
+    this.$lax.addElements(".selector4", {
+      scrollY4: {
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [0, -500],
+          {inertia: 2}
+        ],
+      },
+    });
+    this.$lax.addElements(".selector5", {
+      scrollY5: {
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [-500, 0],
+          {inertia: 2}
+        ],
+      },
     });
   },
+
+  destroyed(){
+    this.$lax.removeElements()
+  }
 };
 </script>
 

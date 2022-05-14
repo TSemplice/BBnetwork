@@ -1,8 +1,8 @@
 <template>
-  <div data-scroll-container>
+  <div class="relative">
     <TheHeader />
     <nuxt class="!pt-12 pb-24" />
-    <TheFooter/>
+    <TheFooter />
   </div>
 </template>
 
