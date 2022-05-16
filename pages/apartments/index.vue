@@ -122,7 +122,7 @@ export default {
     this.$lax.addElements(".selector1", {
       scrollY1: {
         translateX: [
-          ["elInY", "elOutY+200"],
+          ["elInY-500", "elOutY+200"],
           [-800, 0],
           {inertia: 2}
         ],
@@ -131,7 +131,7 @@ export default {
     this.$lax.addElements(".selector2", {
       scrollY2: {
         translateX: [
-          ["elInY", "elOutY+200"],
+          ["elInY-500", "elOutY+200"],
           [0, -800],
           {inertia: 2}
         ],
@@ -140,7 +140,7 @@ export default {
     this.$lax.addElements(".selector3", {
       scrollY3: {
         translateX: [
-          ["elInY", "elOutY+200"],
+          ["elInY-500", "elOutY+200"],
           [-800, 0],
           {inertia: 2}
         ],
