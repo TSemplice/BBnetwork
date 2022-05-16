@@ -20,24 +20,11 @@
     </div>
 
     <section class="mt-24 overflow-hidden relative">
-      <div class="flex flex-nowrap gap-8 first-of-type:mt-0 mt-4" :class="`selector${i}`" v-for="i in 5" :key="i">
+      <div class="flex flex-nowrap gap-8 first-of-type:mt-0 mt-4" :class="`selector${i}`" v-for="i in 3" :key="i">
         <nuxt-img
-          src="/images/apartments1.jpg"
-          format="webp"
-          class="lg:w-1/3 rounded-2xl"
-        ></nuxt-img>
-        <nuxt-img
-          src="/images/apartments1.jpg"
-          format="webp"
-          class="lg:w-1/3 rounded-2xl"
-        ></nuxt-img>
-        <nuxt-img
-          src="/images/apartments1.jpg"
-          format="webp"
-          class="lg:w-1/3 rounded-2xl"
-        ></nuxt-img>
-        <nuxt-img
-          src="/images/apartments1.jpg"
+          v-for="j in 4"
+          :key="j"
+          :src="`/images/apartments-grid/${i*j}.jpg`"
           format="webp"
           class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
@@ -130,31 +117,13 @@ export default {
         inertiaEnabled: true,
       }
     );
-    this.$lax.addDriver(
-      "scrollY4",
-      () => {
-        return window.scrollY/3;
-      },
-      {
-        inertiaEnabled: true,
-      }
-    );
-    this.$lax.addDriver(
-      "scrollY5",
-      () => {
-        return window.scrollY/3;
-      },
-      {
-        inertiaEnabled: true,
-      }
-    );
 
     // Add animation bindings to elements
     this.$lax.addElements(".selector1", {
       scrollY1: {
         translateX: [
           ["elInY-500", "elOutY+200"],
-          [-500, 0],
+          [-800, 0],
           {inertia: 2}
         ],
       },
@@ -163,7 +132,7 @@ export default {
       scrollY2: {
         translateX: [
           ["elInY-500", "elOutY+200"],
-          [0, -500],
+          [0, -800],
           {inertia: 2}
         ],
       },
@@ -172,32 +141,14 @@ export default {
       scrollY3: {
         translateX: [
           ["elInY-500", "elOutY+200"],
-          [-500, 0],
-          {inertia: 2}
-        ],
-      },
-    });
-    this.$lax.addElements(".selector4", {
-      scrollY4: {
-        translateX: [
-          ["elInY-500", "elOutY+200"],
-          [0, -500],
-          {inertia: 2}
-        ],
-      },
-    });
-    this.$lax.addElements(".selector5", {
-      scrollY5: {
-        translateX: [
-          ["elInY-500", "elOutY+200"],
-          [-500, 0],
+          [-800, 0],
           {inertia: 2}
         ],
       },
     });
   },
 
-  destroyed(){
+  beforeDestroy(){
     this.$lax.removeElements()
   }
 };
