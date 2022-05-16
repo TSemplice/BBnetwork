@@ -24,7 +24,7 @@
         <nuxt-img
           v-for="j in 4"
           :key="j"
-          :src="`/images/apartments-grid/${i*j}.jpg`"
+          :src="`/images/apartments-grid/${j + 4*(i-1)}.jpg`"
           format="webp"
           class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
@@ -122,7 +122,7 @@ export default {
     this.$lax.addElements(".selector1", {
       scrollY1: {
         translateX: [
-          ["elInY-500", "elOutY+200"],
+          ["elInY", "elOutY+200"],
           [-800, 0],
           {inertia: 2}
         ],
@@ -131,7 +131,7 @@ export default {
     this.$lax.addElements(".selector2", {
       scrollY2: {
         translateX: [
-          ["elInY-500", "elOutY+200"],
+          ["elInY", "elOutY+200"],
           [0, -800],
           {inertia: 2}
         ],
@@ -140,7 +140,7 @@ export default {
     this.$lax.addElements(".selector3", {
       scrollY3: {
         translateX: [
-          ["elInY-500", "elOutY+200"],
+          ["elInY", "elOutY+200"],
           [-800, 0],
           {inertia: 2}
         ],
