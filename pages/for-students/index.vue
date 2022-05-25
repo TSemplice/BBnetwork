@@ -30,63 +30,47 @@
       </div>
     </div>
 
-    <div
+    <div data-aos="zoom-in"
       class="mt-24 h-[500px] bg-[url(/images/university1.jpg)] bg-center bg-cover"
     />
 
     <div class="mt-24 container flex flex-col gap-6">
-      <h3 class="text-2xl">Caratteristiche e servizi (Cosa è incluso):</h3>
+      <h3 class="text-2xl" data-aos="fade-right">Caratteristiche e servizi (Cosa è incluso):</h3>
 
-      <div class="bullet">
+      <div class="bullet" data-aos="fade-right">
         <nuxt-img src="/images/arrow-black.svg"></nuxt-img>
         <p>Lenzuola e asciugamani</p>
       </div>
-      <div class="bullet">
+      <div class="bullet" data-aos="fade-right">
         <nuxt-img src="/images/arrow-black.svg"></nuxt-img>
         <p>Lenzuola e asciugamani</p>
       </div>
-      <div class="bullet">
+      <div class="bullet" data-aos="fade-right">
         <nuxt-img src="/images/arrow-black.svg"></nuxt-img>
         <p>Lenzuola e asciugamani</p>
       </div>
-      <div class="bullet">
+      <div class="bullet" data-aos="fade-right">
         <nuxt-img src="/images/arrow-black.svg"></nuxt-img>
         <p>Lenzuola e asciugamani</p>
       </div>
-      <div class="bullet">
+      <div class="bullet" data-aos="fade-right">
         <nuxt-img src="/images/arrow-black.svg"></nuxt-img>
         <p>Lenzuola e asciugamani</p>
       </div>
-      <div class="bullet">
+      <div class="bullet" data-aos="fade-right">
         <nuxt-img src="/images/arrow-black.svg"></nuxt-img>
         <p>Lenzuola e asciugamani</p>
       </div>
     </div>
 
-    <section class="mt-24" data-scroll-section>
-      <div 
-        data-scroll-speed="0.5"
-        class="flex gap-8 overflow-clip"
-      >
+    <section class="mt-24 overflow-hidden relative">
+      <div class="flex flex-nowrap gap-8 first-of-type:mt-0 mt-4" :class="`selector${i}`" v-for="i in 3" :key="i">
         <nuxt-img
-          src="/images/apartments1.jpg"
+          v-for="j in 4"
+          :key="j"
+          :src="`/images/apartments-grid/${j + 4*(i-1)}.jpg`"
           format="webp"
-          class="w-1/3 rounded-2xl"
-        ></nuxt-img>
-        <nuxt-img
-          src="/images/apartments1.jpg"
-          format="webp"
-          class="w-1/3 rounded-2xl"
-        ></nuxt-img>
-        <nuxt-img
-          src="/images/apartments1.jpg"
-          format="webp"
-          class="w-1/3 rounded-2xl"
-        ></nuxt-img>
-        <nuxt-img
-          src="/images/apartments1.jpg"
-          format="webp"
-          class="w-1/3 rounded-2xl"
+          class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
       </div>
     </section>
@@ -105,8 +89,8 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center">CONTACT US ABOUT STUDENT HOUSING</h3>
-        <a href="mailto:" class="button-primary-simple">Email Us</a>
+        <h3 class="text-2xl text-center" data-aos="fade-up">CONTACT US ABOUT STUDENT HOUSING</h3>
+        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">Email Us</a>
       </div>
     </section>
   </div>
@@ -129,9 +113,75 @@ export default {
           title: "test",
           text: "test"
         }
-      ]
+      ],
+      scroll: undefined
     }
+  },
+
+  mounted() {
+    this.$lax.init(); // Add a driver that we use to control our animations
+    this.$lax.addDriver(
+      "scrollY1",
+      () => {
+        return window.scrollY/1.8;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+    this.$lax.addDriver(
+      "scrollY2",
+      () => {
+        return window.scrollY/1.8;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+    this.$lax.addDriver(
+      "scrollY3",
+      () => {
+        return window.scrollY/1.8;
+      },
+      {
+        inertiaEnabled: true,
+      }
+    );
+
+    // Add animation bindings to elements
+    this.$lax.addElements(".selector1", {
+      scrollY1: {
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [-800, 0],
+          {inertia: 2}
+        ],
+      },
+    });
+    this.$lax.addElements(".selector2", {
+      scrollY2: {
+        translateX: [
+          ["elInY-1000", "elOutY+200"],
+          [0, -800],
+          {inertia: 2}
+        ],
+      },
+    });
+    this.$lax.addElements(".selector3", {
+      scrollY3: {
+        translateX: [
+          ["elInY-1300", "elOutY+200"],
+          [-800, 0],
+          {inertia: 2}
+        ],
+      },
+    });
+  },
+
+  beforeDestroy(){
+    this.$lax.removeElements()
   }
+
 };
 </script>
 

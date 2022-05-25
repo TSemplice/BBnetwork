@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="xl:px-6 h-[600px]">
-      <div
+      <div data-aos="fade-down"
         class="h-full rounded-b-xl bg-[url(/images/about1.jpg)] bg-center bg-cover bg-no-repeat filter brightness-150"
       />
     </div>
@@ -38,6 +38,7 @@
 
       <div>
         <nuxt-img
+          data-aos="fade-left"
           class="mt-24 rounded-2xl"
           src="/images/about2.jpg"
           format="webp"
@@ -46,7 +47,7 @@
     </div>
 
     <div class="mt-24 container">
-      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6" data-aos="fade-right">
         <div class="xl:col-start-3 xl:col-span-2">
           <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
           <nuxt-link class="mt-4 button-primary" to="/"
@@ -54,9 +55,9 @@
           >
         </div>
         <div class="xl:col-span-6 xl:col-start-6">
-          <p class="underline uppercase text-3xl">
+          <h4 class="underline text-bold text-3xl">
             Connects Students to house in rome
-          </p>
+          </h4>
           <p class="mt-6">
             Join BB Network’s extensive team of trusted affiliate universities
             and find student accommodation in Rome for your enrolled students.
@@ -64,7 +65,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
         <div class="xl:col-start-3 xl:col-span-2">
           <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
           <nuxt-link class="mt-4 button-primary" to="/"
@@ -72,9 +73,9 @@
           >
         </div>
         <div class="xl:col-span-6 xl:col-start-6">
-          <p class="underline uppercase text-3xl">
+          <h4 class="underline text-bold text-3xl">
             Connects Students to house in rome
-          </p>
+          </h4>
           <p class="mt-6">
             Join BB Network’s extensive team of trusted affiliate universities
             and find student accommodation in Rome for your enrolled students.
@@ -82,7 +83,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
         <div class="xl:col-start-3 xl:col-span-2">
           <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
           <nuxt-link class="mt-4 button-primary" to="/"
@@ -90,9 +91,9 @@
           >
         </div>
         <div class="xl:col-span-6 xl:col-start-6">
-          <p class="underline uppercase text-3xl">
+          <h4 class="underline text-bold text-3xl">
             Connects Students to house in rome
-          </p>
+          </h4>
           <p class="mt-6">
             Join BB Network’s extensive team of trusted affiliate universities
             and find student accommodation in Rome for your enrolled students.

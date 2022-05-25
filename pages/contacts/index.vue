@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="xl:px-6 h-[600px]">
-      <div
+      <div data-aos="fade-down"
         class="h-full rounded-b-xl bg-[url(/images/contacts1.jpg)] bg-center bg-cover bg-no-repeat"
       />
     </div>

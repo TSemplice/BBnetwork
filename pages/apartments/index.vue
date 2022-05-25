@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="xl:px-6 h-[600px]">
-      <div
+      <div data-aos="fade-down"
         class="h-full rounded-b-xl bg-[url(/images/apartments1.jpg)] bg-center bg-cover bg-no-repeat"
       />
     </div>
@@ -33,8 +33,8 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center">CONTACT US ABOUT STUDENT HOUSING</h3>
-        <a href="mailto:" class="button-primary-simple">Email Us</a>
+        <h3 class="text-2xl text-center" data-aos="fade-up">CONTACT US ABOUT STUDENT HOUSING</h3>
+        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">Email Us</a>
       </div>
     </section>
   </div>
@@ -93,7 +93,7 @@ export default {
     this.$lax.addDriver(
       "scrollY1",
       () => {
-        return window.scrollY/2;
+        return window.scrollY/1.8;
       },
       {
         inertiaEnabled: true,
@@ -102,7 +102,7 @@ export default {
     this.$lax.addDriver(
       "scrollY2",
       () => {
-        return window.scrollY/2;
+        return window.scrollY/1.8;
       },
       {
         inertiaEnabled: true,
@@ -111,7 +111,7 @@ export default {
     this.$lax.addDriver(
       "scrollY3",
       () => {
-        return window.scrollY/2;
+        return window.scrollY/1.8;
       },
       {
         inertiaEnabled: true,

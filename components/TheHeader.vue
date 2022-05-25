@@ -1,7 +1,7 @@
 <template>
-  <div class="fixed w-full z-40">
+  <div class="fixed w-full z-40 top-0 left-0 transition-[top]" id="navbar">
     <div
-      class="bg-white top-0 left-0 h-14 xl:h-12 px-4 xl:px-12 py-4 flex justify-between items-center"
+      class="bg-white h-14 xl:h-12 transition-all px-4 xl:px-12 py-4 flex justify-between items-center" 
     >
       <nuxt-link :to="localePath('/')" @click="toggleMenu">
         <img
@@ -24,7 +24,7 @@
         <span v-if="!isMenuOpen">MENU</span>
         <span v-else>CLOSE</span>
         <nuxt-img src="/images/menu.svg" class="w-8" v-if="!isMenuOpen" />
-        <nuxt-img src="/images/plus.svg" class="w-8 rotate-45" v-else/>
+        <nuxt-img src="/images/plus.svg" class="w-8 rotate-45" v-else />
       </div>
     </div>
 
@@ -32,7 +32,10 @@
       class="absolute top-[100%] left-0 w-full bg-white border-b-2 border-black"
       v-if="isMenuOpen"
     >
-      <div class="nav py-8 flex flex-col items-center gap-6 container" @click="toggleMenu">
+      <div
+        class="nav py-8 flex flex-col items-center gap-6 container"
+        @click="toggleMenu"
+      >
         <nuxt-link :to="localePath('about-us')">ABOUT US</nuxt-link>
         <nuxt-link :to="localePath('for-university')">FOR UNIVERSITY</nuxt-link>
         <nuxt-link :to="localePath('for-landlords')">FOR LANDLORD</nuxt-link>
@@ -57,6 +60,19 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+  },
+
+  mounted() {
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").classList.remove("!-top-14");
+      } else {
+        document.getElementById("navbar").classList.add("!-top-14");
+      }
+      prevScrollpos = currentScrollPos;
+    };
   },
 };
 </script>
