@@ -8,35 +8,21 @@
 
     <div class="mt-12 container">
       <h1 class="text-4xl xl:w-1/2 xl:text-7xl">
-        “Welcome to Rome student housing - your home away from home”
+        {{$t('aboutus.intro')}}
       </h1>
     </div>
 
     <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-x-44 gap-y-12 container">
       <div class="text-lg xl:pr-24">
-        <p>
-          You’ve decided to study in one of the most beautiful cities in the
-          world, <strong>Rome!</strong> Enjoy your stay to the fullest with one
-          of the leaders in European student accommodation.
+        <p v-html="$t('aboutus.p1')">
         </p>
-        <p class="mt-6">
-          <strong>BB Network</strong> has provided
-          <strong>student housing in Rome for over 20 years</strong>, making it
-          one of the leaders in quality accommodation for international students
-          studying in the eternal city. We are partnered with some of the most
-          well known universities of Rome and prides itself on finding clean,
-          safe and comfortable apartments in central Rome for students to have a
-          successful experience abroad. <strong>BB Network</strong> also offers
-          accommodation throughout the rest of Italy and Europe as well.
+        <p class="mt-6" v-html="$t('aboutus.p2')">
         </p>
-        <p class="mt-6">
-          Our bilingual <strong>support team is on call 24/7</strong> and are
-          trained to resolve any issue that may arise at any time of day in
-          their home away from home.
+        <p class="mt-6" v-html="$t('aboutus.p3')">
         </p>
       </div>
 
-      <div>
+      <div class="overflow-x-hidden lg:overflow-x-auto">
         <nuxt-img
           data-aos="fade-left"
           class="mt-24 rounded-2xl"
@@ -49,54 +35,51 @@
     <div class="mt-24 container">
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6" data-aos="fade-right">
         <div class="xl:col-start-3 xl:col-span-2">
-          <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
-          <nuxt-link class="mt-4 button-primary" to="/"
-            >Discover more</nuxt-link
+          <h3 class="text-xl">{{$t('aboutus.cta1_q')}}</h3>
+          <nuxt-link class="mt-4 button-primary" :to="localePath('/for-university')"
+            >{{$t('discover')}}</nuxt-link
           >
         </div>
         <div class="xl:col-span-6 xl:col-start-6">
           <h4 class="underline text-bold text-3xl">
-            Connects Students to house in rome
+            {{$t('aboutus.cta1_title')}}
           </h4>
           <p class="mt-6">
-            Join BB Network’s extensive team of trusted affiliate universities
-            and find student accommodation in Rome for your enrolled students.
+            {{$t('aboutus.cta1_p')}}
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
         <div class="xl:col-start-3 xl:col-span-2">
-          <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
-          <nuxt-link class="mt-4 button-primary" to="/"
-            >Discover more</nuxt-link
+          <h3 class="text-xl">{{$t('aboutus.cta2_q')}}</h3>
+          <nuxt-link class="mt-4 button-primary" :to="localePath('/for-landlords')"
+            >{{$t('discover')}}</nuxt-link
           >
         </div>
         <div class="xl:col-span-6 xl:col-start-6">
           <h4 class="underline text-bold text-3xl">
-            Connects Students to house in rome
+            {{$t('aboutus.cta2_title')}}
           </h4>
           <p class="mt-6">
-            Join BB Network’s extensive team of trusted affiliate universities
-            and find student accommodation in Rome for your enrolled students.
+            {{$t('aboutus.cta2_p')}}
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
         <div class="xl:col-start-3 xl:col-span-2">
-          <h3 class="text-xl">ARE YOU A UNIVERSITY?</h3>
-          <nuxt-link class="mt-4 button-primary" to="/"
-            >Discover more</nuxt-link
+          <h3 class="text-xl">{{$t('aboutus.cta3_q')}}</h3>
+          <nuxt-link class="mt-4 button-primary" :to="localePath('/for-students')"
+            >{{$t('discover')}}</nuxt-link
           >
         </div>
         <div class="xl:col-span-6 xl:col-start-6">
           <h4 class="underline text-bold text-3xl">
-            Connects Students to house in rome
+            {{$t('aboutus.cta3_title')}}
           </h4>
           <p class="mt-6">
-            Join BB Network’s extensive team of trusted affiliate universities
-            and find student accommodation in Rome for your enrolled students.
+            {{$t('aboutus.cta3_p')}}
           </p>
         </div>
       </div>

@@ -67,12 +67,12 @@
 
 @layer components {
   .button-primary {
-    @apply bg-black text-gray-300 transition-all border border-black px-6 font-bold inline-flex justify-center z-0 items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:border after:border-black after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-black after:bg-center after:bg-no-repeat
-    hover:bg-white hover:after:bg-white hover:border hover:after:border hover:border-black hover:after:border-black after:transition-all hover:text-black;
+    @apply bg-brand-secondary text-gray-300 transition-all border border-brand-secondary px-6 font-bold inline-flex justify-center z-0 items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:border after:border-brand-secondary after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-brand-secondary after:bg-center after:bg-no-repeat
+    hover:bg-white hover:after:bg-white hover:border hover:after:border hover:border-brand-secondary hover:after:border-brand-secondary after:transition-all hover:text-brand-secondary;
   }
   .button-primary-simple {
-    @apply bg-black text-gray-300 border border-black transition-all px-6 font-bold inline-flex z-0 justify-center items-center rounded-full relative h-12
-    hover:bg-white hover:border hover:border-black hover:text-black;
+    @apply bg-brand-secondary text-gray-300 border border-brand-secondary transition-all px-6 font-bold inline-flex z-0 justify-center items-center rounded-full relative h-12
+    hover:bg-white hover:border hover:border-brand-secondary hover:text-brand-secondary;
   }
 }
 

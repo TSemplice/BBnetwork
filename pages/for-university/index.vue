@@ -1,79 +1,71 @@
 <template>
   <div>
     <div class="mt-12 container">
-      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">Cerchi degli alloggi per i tuoi studenti?</h1>
+      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">
+        {{$t('university.intro')}}
+      </h1>
 
       <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-44">
         <div class="text-lg">
-          <p>
-            You’ve decided to study in one of the most beautiful cities in the
-            world, <strong>Rome!</strong> Enjoy your stay to the fullest with
-            one of the leaders in European student accommodation.
-          </p>
-          <p class="mt-6">
-            <strong>BB Network</strong> has provided
-            <strong>student housing in Rome for over 20 years</strong>, making
-            it one of the leaders in quality accommodation for international
-            students studying in the eternal city. We are partnered with some of
-            the most well known universities of Rome and prides itself on
-            finding clean, safe and comfortable apartments in central Rome for
-            students to have a successful experience abroad.
-            <strong>BB Network</strong> also offers accommodation throughout the
-            rest of Italy and Europe as well.
-          </p>
-          <p class="mt-6">
-            Our bilingual <strong>support team is on call 24/7</strong> and are
-            trained to resolve any issue that may arise at any time of day in
-            their home away from home.
-          </p>
+          <p v-html="$t('university.p1')"></p>
+          <p class="mt-6" v-html="$t('university.p2')"></p>
+          <p class="mt-6" v-html="$t('university.p3')"></p>
         </div>
       </div>
     </div>
 
-    <div data-aos="zoom-in"
+    <div
+      data-aos="zoom-in"
       class="mt-24 h-[500px] bg-[url(/images/university1.jpg)] bg-center bg-cover"
     />
 
     <div class="mt-24 container">
-      <h3 data-aos="fade-right" class="text-4xl uppercase lg:w-1/2">What BB Network offers Universities?</h3>
+      <h3 data-aos="fade-right" class="text-4xl uppercase lg:w-1/2">
+        {{$t('university.list_title')}}
+      </h3>
 
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40 gap-y-12 mt-12">
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
           <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <h3 class="text-2xl">{{$t('university.list1_title')}}</h3>
+          <p class="text-lg">{{$t('university.list1_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
-          <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <p>02.</p>
+          <h3 class="text-2xl">{{$t('university.list2_title')}}</h3>
+          <p class="text-lg">{{$t('university.list2_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
-          <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <p>03.</p>
+          <h3 class="text-2xl">{{$t('university.list3_title')}}</h3>
+          <p class="text-lg">{{$t('university.list3_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
-          <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <p>04.</p>
+          <h3 class="text-2xl">{{$t('university.list4_title')}}</h3>
+          <p class="text-lg">{{$t('university.list4_p')}}</p>
         </div>
       </div>
     </div>
 
     <section class="mt-24 overflow-hidden relative">
-      <div class="flex flex-nowrap gap-8 first-of-type:mt-0 mt-4" :class="`selector${i}`" v-for="i in 3" :key="i">
+      <div
+        class="flex flex-nowrap gap-8 first-of-type:mt-0 mt-4"
+        :class="`selector${i}`"
+        v-for="i in 3"
+        :key="i"
+      >
         <nuxt-img
           v-for="j in 4"
           :key="j"
-          :src="`/images/apartments-grid/${j + 4*(i-1)}.jpg`"
+          :src="`/images/apartments-grid/${j + 4 * (i - 1)}.jpg`"
           format="webp"
           class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
       </div>
     </section>
 
-    <section class="mt-24 container">
+    <section class="mt-24 container" v-if="false">
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
         <div class="flex flex-col gap-6">
           <h3 class="text-6xl">FAQ</h3>
@@ -87,8 +79,8 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center" data-aos="fade-up">CONTACT US ABOUT STUDENT HOUSING</h3>
-        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">Email Us</a>
+        <h3 class="text-2xl text-center" data-aos="fade-up">{{$t('contact_us')}}</h3>
+        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>
   </div>
@@ -101,19 +93,19 @@ export default {
       contents: [
         {
           title: "test",
-          text: "test"
+          text: "test",
         },
         {
           title: "test",
-          text: "test"
+          text: "test",
         },
         {
           title: "test",
-          text: "test"
-        }
+          text: "test",
+        },
       ],
-      scroll: undefined
-    }
+      scroll: undefined,
+    };
   },
 
   mounted() {
@@ -121,7 +113,7 @@ export default {
     this.$lax.addDriver(
       "scrollY1",
       () => {
-        return window.scrollY/1.8;
+        return window.scrollY / 1.8;
       },
       {
         inertiaEnabled: true,
@@ -130,7 +122,7 @@ export default {
     this.$lax.addDriver(
       "scrollY2",
       () => {
-        return window.scrollY/1.8;
+        return window.scrollY / 1.8;
       },
       {
         inertiaEnabled: true,
@@ -139,7 +131,7 @@ export default {
     this.$lax.addDriver(
       "scrollY3",
       () => {
-        return window.scrollY/1.8;
+        return window.scrollY / 1.8;
       },
       {
         inertiaEnabled: true,
@@ -149,37 +141,24 @@ export default {
     // Add animation bindings to elements
     this.$lax.addElements(".selector1", {
       scrollY1: {
-        translateX: [
-          ["elInY-500", "elOutY+200"],
-          [-800, 0],
-          {inertia: 2}
-        ],
+        translateX: [["elInY-500", "elOutY+200"], [-800, 0], { inertia: 2 }],
       },
     });
     this.$lax.addElements(".selector2", {
       scrollY2: {
-        translateX: [
-          ["elInY-1000", "elOutY+200"],
-          [0, -800],
-          {inertia: 2}
-        ],
+        translateX: [["elInY-1000", "elOutY+200"], [0, -800], { inertia: 2 }],
       },
     });
     this.$lax.addElements(".selector3", {
       scrollY3: {
-        translateX: [
-          ["elInY-1300", "elOutY+200"],
-          [-800, 0],
-          {inertia: 2}
-        ],
+        translateX: [["elInY-1300", "elOutY+200"], [-800, 0], { inertia: 2 }],
       },
     });
   },
 
-  beforeDestroy(){
-    this.$lax.removeElements()
-  }
-
+  beforeDestroy() {
+    this.$lax.removeElements();
+  },
 };
 </script>
 

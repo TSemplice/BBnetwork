@@ -7,15 +7,7 @@
     </div>
 
     <div class="mt-24 container">
-      <p class="text-lg xl:text-2xl xl:leading-10">
-        <strong>BB Network</strong> has been providing quality student
-        accommodation <strong>in Rome and Spain</strong> for decades. Our
-        student housing is carefully chosen based on their location, comfortable
-        and spacious bedrooms, bathrooms, kitchens and common areas. Our
-        properties are located in Trastevere, a charming cobblestoned lined
-        neighborhood known for its lively nightlife, as well as other popular
-        Rome neighborhoods such as the elegant Prati, the historic center of
-        Rome and the central residential area of San Giovanni.
+      <p class="text-lg xl:text-2xl xl:leading-10" v-html="$t('apartments.intro')">
       </p>
     </div>
 
@@ -33,8 +25,8 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center" data-aos="fade-up">CONTACT US ABOUT STUDENT HOUSING</h3>
-        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">Email Us</a>
+        <h3 class="text-2xl text-center" data-aos="fade-up">{{$t('contact_us')}}</h3>
+        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <TheHeader />
-    <nuxt class="!pt-12 pb-24" />
+    <nuxt class="pb-24" />
     <TheFooter />
   </div>
 </template>

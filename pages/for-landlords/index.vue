@@ -1,30 +1,15 @@
 <template>
   <div>
     <div class="mt-12 container">
-      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">Cerchi degli alloggi per i tuoi studenti?</h1>
+      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">{{$t('landlords.intro')}}</h1>
 
       <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-44">
         <div class="text-lg">
-          <p>
-            You’ve decided to study in one of the most beautiful cities in the
-            world, <strong>Rome!</strong> Enjoy your stay to the fullest with
-            one of the leaders in European student accommodation.
+          <p v-html="$t('landlords.p1')">
           </p>
-          <p class="mt-6">
-            <strong>BB Network</strong> has provided
-            <strong>student housing in Rome for over 20 years</strong>, making
-            it one of the leaders in quality accommodation for international
-            students studying in the eternal city. We are partnered with some of
-            the most well known universities of Rome and prides itself on
-            finding clean, safe and comfortable apartments in central Rome for
-            students to have a successful experience abroad.
-            <strong>BB Network</strong> also offers accommodation throughout the
-            rest of Italy and Europe as well.
+          <p class="mt-6" v-html="$t('landlords.p2')">
           </p>
-          <p class="mt-6">
-            Our bilingual <strong>support team is on call 24/7</strong> and are
-            trained to resolve any issue that may arise at any time of day in
-            their home away from home.
+          <p class="mt-6" v-html="$t('landlords.p3')">
           </p>
         </div>
       </div>
@@ -35,28 +20,28 @@
     />
 
     <div class="mt-24 container">
-      <h3 data-aos="fade-right" class="text-4xl uppercase lg:w-1/2">What BB Network offers Universities?</h3>
+      <h3 data-aos="fade-right" class="text-4xl uppercase lg:w-1/2">{{$t('landlords.list_title')}}</h3>
 
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40 gap-y-12 mt-12">
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
           <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <h3 class="text-2xl">{{$t('landlords.list1_title')}}</h3>
+          <p class="text-lg">{{$t('landlords.list1_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
-          <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <p>02.</p>
+          <h3 class="text-2xl">{{$t('landlords.list2_title')}}</h3>
+          <p class="text-lg">{{$t('landlords.list2_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
-          <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <p>03.</p>
+          <h3 class="text-2xl">{{$t('landlords.list3_title')}}</h3>
+          <p class="text-lg">{{$t('landlords.list3_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
-          <p>01.</p>
-          <h3 class="text-2xl">Servizio di pulizia</h3>
-          <p class="text-lg">Offriamo servizi di pulizia giornalieri, settimanali e mensili per tutti i nostri appartamenti. Crediamo che fornendo questo, permettiamo agli studenti di trascorrere il tempo risparmiato esplorando la città e facendo di Roma una casa.</p>
+          <p>04.</p>
+          <h3 class="text-2xl">{{$t('landlords.list4_title')}}</h3>
+          <p class="text-lg">{{$t('landlords.list4_p')}}</p>
         </div>
       </div>
     </div>
@@ -73,7 +58,7 @@
       </div>
     </section>
 
-    <section class="mt-24 container">
+    <section class="mt-24 container" v-if="false">
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
         <div class="flex flex-col gap-6">
           <h3 class="text-6xl">FAQ</h3>
@@ -87,8 +72,8 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center" data-aos="fade-up">CONTACT US ABOUT STUDENT HOUSING</h3>
-        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">Email Us</a>
+        <h3 class="text-2xl text-center" data-aos="fade-up">{{$t('contact_us')}}</h3>
+        <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>
   </div>

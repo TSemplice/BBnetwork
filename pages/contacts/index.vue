@@ -13,7 +13,7 @@
         <p class="font-bold">BB Network srl</p>
         <p>Piazzale Gregorio VII 39</p>
         <p>00164 Roma</p>
-        <p class="font-bold underline">COME RAGGIUNGERCI</p>
+        <a href="https://goo.gl/maps/87Q1TSopykn3LxkZA" target="_blank" class="font-bold underline">COME RAGGIUNGERCI</a>
       </div>
 
       <div class="mt-12">

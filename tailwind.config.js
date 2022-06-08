@@ -16,11 +16,9 @@ module.exports = {
         primary: "Anybody",
       },
       colors: {
-        // brand: {
-        //   primary: "rgb(0,22,131)",
-        //   secondary: "#F0F4FD",
-        //   tertiary: "#FA551D",
-        // },
+        brand: {
+          secondary: "#3A3636",
+        },
       },
     },
   },
