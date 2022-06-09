@@ -81,6 +81,37 @@
 
 <script>
 export default {
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    return {
+      link: [...i18nHead.link],
+      title: this.$t('seo.landlords.title'),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t('seo.landlords.description'),
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: this.$t('seo.landlords.title'),
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.$t('seo.landlords.description'),
+        },
+        // {
+        //   hid: "og:image",
+        //   property: "og:image",
+        //   content: this.fetchSocialImage,
+        // },
+        ...i18nHead.meta,
+      ],
+    };
+  },
+
   data() {
     return {
       contents: [

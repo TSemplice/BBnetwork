@@ -38,36 +38,27 @@ export default {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
       link: [...i18nHead.link],
+      title: this.$t('seo.apartments.title'),
       meta: [
-        // {
-        //   hid: "title",
-        //   name: "title",
-        //   content: this.metas.meta_title,
-        // },
-        // {
-        //   hid: "description",
-        //   name: "description",
-        //   content: this.metas.meta_description,
-        // },
-        // {
-        //   hid: "og:title",
-        //   name: "og:title",
-        //   content: this.fetchSocialTitle,
-        // },
-        // {
-        //   hid: "og:description",
-        //   name: "og:description",
-        //   content: this.fetchSocialDescription,
-        // },
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t('seo.apartments.description'),
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: this.$t('seo.apartments.title'),
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.$t('seo.apartments.description'),
+        },
         // {
         //   hid: "og:image",
         //   property: "og:image",
         //   content: this.fetchSocialImage,
-        // },
-        // {
-        //   hid: "og:url",
-        //   property: "og:url",
-        //   content: "https://www.smartpricing.it/" + this.$i18n.locale + "/",
         // },
         ...i18nHead.meta,
       ],

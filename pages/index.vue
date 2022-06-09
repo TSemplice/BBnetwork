@@ -36,7 +36,7 @@
     />
 
     <div class="mt-32 container xl:px-32">
-      <h3 class="text-3xl xl:text-[5.2rem] xl:leading-[6rem]">
+      <h3 class="text-3xl 2xl:text-[5.2rem] 2xl:leading-[6rem]">
         {{$t('home.p')}}
       </h3>
     </div>
@@ -72,6 +72,42 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+    head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    return {
+      link: [...i18nHead.link],
+      title: this.$t('seo.home.title'),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t('seo.home.description'),
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: this.$t('seo.home.title'),
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.$t('seo.home.description'),
+        },
+        // {
+        //   hid: "og:image",
+        //   property: "og:image",
+        //   content: this.fetchSocialImage,
+        // },
+        ...i18nHead.meta,
+      ],
+    };
+  },
+
+}
+</script>
 
 <style lang="postcss" scoped>
 .card {
