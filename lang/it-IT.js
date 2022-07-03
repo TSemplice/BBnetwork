@@ -5,8 +5,8 @@ export default {
   home: {
     intro1: `BB Network, leader negli alloggi per studenti a Roma e a Barcellona.`,
     intro2: `Da oltre venti anni mettiamo in contatto i proprietari di casa e le università`,
-    intro3: `per fornire agli studenti alloggi di qualità`,
-    intro4: `a Roma e a Barcellona.`,
+    intro3: `offrendo a studenti, internazionali e non,i migliori alloggi in residence o in appartamenti,la nostra esperienza e i nostri servizi`,
+    intro4: `per il loro soggiorno a Roma e a Barcellona.`,
     p: `BB Network offre tre tipi di servizio relativi alla ricerca di alloggi per studenti, mettendo in contatto le università con i proprietari di casa e garantendo agli studenti un servizio di eccellenza, per rendere il loro soggiorno in Italia indimenticabile.`,
     cta1: `Sei un’università alla ricerca di alloggi disponibili per i tuoi studenti? `,
     cta2: `Vorresti affittare il tuo appartamento a studenti responsabili?`,
@@ -30,7 +30,7 @@ BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
     cta3_p: `Scegli tra centinaia di appartamenti accoglienti nel cuore di Roma, dotati di tutti i comfort più moderni e il supporto 24 ore su 24 dello staff BB Network a tua disposizione.`,
   },
   apartments: {
-    intro: `BB Network gestisce alloggi di qualità per studenti in Italia e in Spagna da decenni. I nostri alloggi vengono selezionati con cura in base alla posizione, all’ampiezza e alla comodità delle camere da letto, dei bagni, delle cucine e delle aree comuni. Le nostre proprietà si trovano a Trastevere, un affascinante rione lastricato con il tipico sampietrino romano e noto per la sua vitale atmosfera notturna, così come in altre zone rinomate di Roma tra cui l'elegante Prati, il centro storico e l’area residenziale di San Giovanni.`,
+    intro: `BB Network gestisce alloggi di qualità per studenti in Italia e in Spagna. I nostri alloggi vengono selezionati con cura in base alla posizione, all’ampiezza e alla comodità delle camere da letto, dei bagni, delle cucine e delle aree comuni. Le nostre proprietà si trovano a Trastevere, un affascinante rione lastricato con il tipico sampietrino romano e noto per la sua vitale atmosfera notturna, così come in altre zone rinomate di Roma tra cui l'elegante Prati, il centro storico e l’area residenziale di San Giovanni.`,
   },
   university: {
     intro: `Alloggi fuori dal campus`,
