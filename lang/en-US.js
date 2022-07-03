@@ -4,9 +4,9 @@ export default {
   email_us: `Invia un'email`,
   home: {
     intro1: `BB Network, leaders in Barcelona & Rome student housing.`,
-    intro2: `We have been connecting universities with property owners`,
-    intro3: `to provide quality housing for students in Rome`,
-    intro4: `and Barcelona for over twenty years.`,
+    intro2: `We have been connecting universities with property`,
+    intro3: `owners to provide quality housing for students in Rome and`,
+    intro4: `Barcelona for over twenty years.`,
     p: `BB Network offers 3 distinct services related to student housing connecting universities, landlords and students.`,
     cta1: `Are you a university looking for available homes for students?`,
     cta2: `Are you looking to rent your apartment to responsible students?`,
