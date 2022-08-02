@@ -1,7 +1,7 @@
 export default {
-  discover: `Scopri di piú`,
-  contact_us: `Contattaci per saperne di piú`,
-  email_us: `Invia un'email`,
+  discover: `Lear more`,
+  contact_us: `Contact us for more info`,
+  email_us: `Email us`,
   home: {
     intro1: `BB Network, leaders in Barcelona & Rome student housing.`,
     intro2: `We have been connecting universities with property`,
