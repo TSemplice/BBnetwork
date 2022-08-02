@@ -51,7 +51,7 @@
         <nuxt-img
           v-for="j in 4"
           :key="j"
-          :src="`/images/apartments-grid/${j + 4*(i-1)}.jpg`"
+          :src="`/images/students-grid/${j + 4*(i-1)}.jpg`"
           format="webp"
           class="lg:w-1/3 rounded-2xl"
         ></nuxt-img>
