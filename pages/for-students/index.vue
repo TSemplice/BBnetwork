@@ -16,7 +16,7 @@
     </div>
 
     <div data-aos="zoom-in"
-      class="mt-24 h-[500px] bg-[url(/images/university1.jpg)] bg-center bg-cover"
+      class="mt-24 h-[500px] bg-[url(/images/students1.png)] bg-center bg-cover"
     />
 
     <div class="mt-24 container">
