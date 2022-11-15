@@ -3,10 +3,10 @@ export default {
   contact_us: `Contact us for more info`,
   email_us: `Email us`,
   home: {
-    intro1: `BB Network, leaders in Barcelona & Rome student housing.`,
+    intro1: `BB Network, leaders in European student housing.`,
     intro2: `We have been connecting universities with property`,
-    intro3: `owners to provide quality housing for students in Rome and`,
-    intro4: `Barcelona for over twenty years.`,
+    intro3: `for over twenty years.`,
+    intro4: `We provide comfortable study abroad accommodation in major European cities.`,
     p: `BB Network offers 3 distinct services related to student housing connecting universities, landlords and students.`,
     cta1: `Are you a university looking for available homes for students?`,
     cta2: `Are you looking to rent your apartment to responsible students?`,
@@ -15,24 +15,24 @@ export default {
   aboutus: {
     intro: `“Welcome to Rome student housing - your home away from home”`,
     p1: `You’ve decided to study in one of the most beautiful cities in the world, Rome! Enjoy your stay to the fullest with one of the leaders in European student accommodation.`,
-    p2: `BB Network has provided student housing in Rome for over 20 years, making it one of the leaders in quality accommodation for international students studying in the eternal city. We are partnered with some of the most well known universities of Rome and prides itself on finding clean, safe and comfortable apartments in central Rome for students to have a successful experience abroad. BB Network also offers accommodation throughout the rest of Italy and Europe as well.`,
+    p2: `BB Network has provided student housing in Rome for over 20 years, making it one of the leaders in quality accommodation for international students studying in the eternal city. We are partnered with some of the most well known universities of Rome and prides itself on finding clean, safe and comfortable apartments in central Rome for students to have a successful experience abroad. BB Network also offers accommodation throughout the rest of Italy and Europe as well. `,
     p3: `Our bilingual support team is on call 24/7 and are trained to resolve any issue that may arise at any time of day in their home away from home.`,
     cta1_q: `Are you a university?`,
     cta1_title: `Connect students to houses in Rome.`,
     cta1_p: `Join BB Network’s extensive team of trusted affiliate universities and find student accommodation in Rome for your enrolled students.`,
     cta2_q: `Are you a property owner?`,
-    cta2_title: `Rent your Rome property as student apartments in Rome.`,
-    cta2_p: `If you have a city center Rome apartment you would like to rent out to trusted students, BB Network will find an affiliated university to match you with the perfect person.`,
+    cta2_title: `Rent your Rome property as student apartments in cities like Rome, Barcelona and more`,
+    cta2_p: `If you have a city center apartment you would like to rent out to trusted students, BB Network will find an affiliated university to match you with the perfect person.`,
     cta3_q: `Are you a student?`,
     cta3_title: `Find safe & affordable student housing in Rome.`,
-    cta3_p: `Choose from hundreds of comfortable apartments in the heart of Rome equipped with modern amenities and 24/7 BB Network emergency support staff on hand.`,
+    cta3_p: `Choose from hundreds Hundreds of comfortable apartments in the heart of Rome equipped with modern amenities and 24/7 BB Network emergency support staff on hand.`,
   },
   apartments: {
     intro: `BB Network has been providing quality student accommodation in Rome and Spain for decades. Our student housing is carefully chosen based on their location, comfortable and spacious bedrooms, bathrooms, kitchens and common areas. Our properties are located in Trastevere, a charming cobblestoned lined neighborhood known for its lively nightlife, as well as other popular Rome neighborhoods such as the elegant Prati, the historic center of Rome and the central residential area of San Giovanni.`,
   },
   university: {
     intro: `University off campus housing`,
-    p1: `Student apartments in Rome & Barcelona - all inclusive services.`,
+    p1: `SStudent apartments throughout Europe - all inclusive services.`,
     p2: `BB Network has been providing spacious and comfortable student housing for international university students for over 20 years. We offer full service contracts to accommodate both students and property owners.`,
     p3: `Our apartments are all centrally located in residential neighborhoods of Rome and Barcelona, within close proximity to the university. Our mission is to deliver consistent customer service, bilingual assistance (English and Italian) and 24/7 emergency support.`,
     list_title: `What BB Network offers?`,
@@ -46,9 +46,9 @@ export default {
     list4_p: `All of our apartments are equipped with smoke detectors, fire extinguishers, CO2 detectors and first aid kits. We also have a staff on call for emergencies. Our number one priority is to ensure students are safe and comfortable while at home away from home.`,
   },
   landlords: {
-    intro: `Rent your property.  Provide student apartments in Rome & Barcelona`,
-    p1: `Rent your apartment to international university students.`,
-    p2: `BB Network offers services for property owners who are looking to rent their accommodation.  If you have an apartment you’d like to rent in Rome or Barcelona city center, leave it to us to find a suitable short term tenant.`,
+    intro: `Rent your apartment to international university students.`,
+    p1: `BB Network offers services for property owners who are looking to rent their accommodation.  If you have an apartment you’d like to rent in Rome or Barcelona city center, leave it to us to find a suitable short term tenant.`,
+    p2: `Our staff aims to make the entire rental experience as easy as possible. We take care of the process from start to finish. You set the conditions of use and we find the students to suit your needs and property type.`,
     p3: `We believe that people make the difference which is why our attention to quality extends far beyond choosing the right apartment - we also choose the right people to work with. Our staff is carefully selected to carry out our mission of providing the ultimate in customer support and professionalism.`,
     list_title: `Why choose BB Network?`,
     list1_title: `Short term rentals`,
@@ -77,19 +77,19 @@ export default {
   },
   seo: {
     home: {
-      title: "Student housing in Rome & Barcelona | BB Network",
+      title: " International student housing, Rome, Barcelona and more | BB Network",
       description:
         "We help universities find affordable, serviced apartments in great locations. BB Network - leaders in study abroad accommodation with 20+ years' experience.",
     },
     landlords: {
       title: "Rent out your home, mid to long-term rentals | BB Network",
       description:
-        "Specializing in temporary international student rentals. 100% stress free. Contracts, cleaning & customer support. Established universities in Rome & Barcelona.",
+        "Specializing in temporary international student rentals. 100% stress free. Contracts, cleaning & customer support. Established international universities in Rome,Barcelona and more.",
     },
     students: {
-      title: "Off campus student housing in Rome & Barcelona | BB Network",
+      title: "Off campus international student housing | BB Network",
       description:
-        "Specializing in university housing for over 20 years. Fully furnished accommodation, 24/7 customer support & cleaning services. Short- and long-term rentals.",
+        "Specializing in study abroad housing for over 20 years. Fully furnished accommodation, 24/7 customer support & cleaning services. Short- and long-term rentals.",
     },
     university: {
       title:
@@ -99,13 +99,13 @@ export default {
     },
     apartments: {
       title:
-        "BB Network has been providing quality student accommodation in Rome and Spain",
+        "Quality student accommodation throughout Europe | BB Network",
       description:
-        "Our student housing is carefully chosen based on their location, comfortable and spacious bedrooms, bathrooms, kitchens and common areas. Our properties are located in the most central areas of the city.",
+        "Our student housing is carefully chosen based on location in the most central areas of the city. Apartments include spacious bedrooms, bathrooms, kitchens and common areas.",
     },
     contacts: {
-      title: "BB Network, leaders in Barcelona & Rome student housing.",
-      description: "Contact us",
+      title: " Leaders in international  student housing. | BB Network",
+      description: "We provide safe, comfortable and fully serviced homes for students studying abroad in Spain . Contact us to learn more about our services. ",
     },
   },
 };

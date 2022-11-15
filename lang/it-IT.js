@@ -97,19 +97,19 @@ BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
     },
     university: {
       title:
-        "Studiare all'estero, ricerca e servizi di alloggi per studenti internazionali",
+        "Ricerca e servizi alloggi per studenti internazionali e erasmus | BB Network ",
       description:
-        "Lavoriamo con famiglie locali e università internazionali per trovare alloggi per studenti in posizione centrale, completamente arredati e serviti a Roma e Barcellona. Abbiamo più di 20 anni di esperienza.",
+        "estiamo case locali e università internazionali per fornire alloggi per studenti in posizione centrale, completamente arredati e serviti a Roma e Barcellona. Abbiamo più di 20 anni di esperienza.",
     },
     apartments: {
       title:
-        "BB Network offre appartamenti di qualità per studenti internazionali a Roma e in Spagna",
+        "Appartamenti di qualità per studenti a Roma e Barcelona | BB Network",
       description:
         "I nostri alloggi per studenti sono scelti con cura in base alla loro posizione, camere da letto comode e spaziose, bagni, cucine e aree comuni. Le nostre proprietà si trovano nelle zone più centrali della città.",
     },
     contacts: {
       title:
-        "BB Network è leader a Roma e Barcellona nella ricerca di alloggi per studenti",
+        "Leader in Europa  nella ricerca di alloggi per studenti| BB Network        ",
       description: "Contatti per ricevere maggiori informazioni",
     },
   },
