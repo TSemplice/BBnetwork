@@ -1,7 +1,7 @@
 <template>
   <div class="sticky w-full z-40 top-0 left-0 transition-[top]" id="navbar">
     <div
-      class="desktop-nav bg-white h-14 xl:h-12 transition-all px-4 xl:px-12 py-4 flex justify-between items-center"
+      class="desktop-nav bg-white h-14 xl:h-12 transition-all px-4 xl:px-6 py-4 flex justify-between items-center"
     >
       <nuxt-link
         :to="localePath('/')"
@@ -9,7 +9,7 @@
         class="!bg-transparent"
       >
         <img
-          src="~assets/images/logo-black.svg"
+          src="/images/Logo_BBN(light).svg"
           class="h-auto w-1/2 xl:h-full xl:w-auto"
         />
       </nuxt-link>
@@ -21,10 +21,10 @@
         <nuxt-link :to="localePath('for-students')">FOR STUDENTS</nuxt-link>
         <nuxt-link :to="localePath('apartments')">APARTMENTS</nuxt-link>
         <nuxt-link :to="localePath('contacts')">CONTACTS</nuxt-link>
-        <div class="flex gap-2 items-center">
-          <nuxt-link :to="switchLocalePath('it')">IT</nuxt-link>
+        <div class="flex pl-8 gap-2 items-center font-normal" style="font-weight: 400">
+          <nuxt-link style="font-weight: 400" :to="switchLocalePath('it')">IT</nuxt-link>
           <span class="text-2xl text-black">|</span>
-          <nuxt-link :to="switchLocalePath('en')">EN</nuxt-link>
+          <nuxt-link style="font-weight: 400" :to="switchLocalePath('en')">EN</nuxt-link>
         </div>
       </div>
 
@@ -37,7 +37,7 @@
     </div>
 
     <div
-      class="mobile-nav fixed top-0 left-0 w-full h-full bg-brand-secondary"
+      class="mobile-nav fixed top-0 left-0 w-full h-full bg-brand-primary"
       v-if="isMenuOpen"
     >
       <div class="flex flex-col h-full pt-10 justify-between">
@@ -108,7 +108,7 @@ export default {
 
 <style lang="postcss" scoped>
 .desktop-nav a {
-  @apply text-black uppercase font-bold;
+  @apply text-brand-primary uppercase font-bold;
 }
 .mobile-nav a {
   @apply text-white text-3xl font-bold;
@@ -117,7 +117,7 @@ export default {
   @apply bg-black text-white;
 }
 .desktop-nav .nuxt-link-active{
-  @apply underline bg-transparent text-black;
+  @apply underline bg-transparent text-brand-primary;
 } 
 .mobile-nav .nuxt-link-active {
   @apply underline bg-transparent text-white;

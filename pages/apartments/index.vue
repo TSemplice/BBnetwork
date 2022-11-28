@@ -7,7 +7,7 @@
     </div>
 
     <div class="mt-24 container">
-      <p class="text-lg xl:text-2xl xl:leading-10" v-html="$t('apartments.intro')">
+      <p class="text-lg xl:text-2xl xl:leading-10 text-brand-secondary" v-html="$t('apartments.intro')">
       </p>
     </div>
 
@@ -24,8 +24,8 @@
     </section>
 
     <section class="mt-24 py-12 container">
-      <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center" data-aos="fade-up">{{$t('contact_us')}}</h3>
+      <div class="flex justify-center items-center flex-col gap-4 text-black">
+        <h3 class="text-3xl text-center uppercase" data-aos="fade-up">{{$t('contact_us')}}</h3>
         <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>

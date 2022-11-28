@@ -2,7 +2,7 @@
   <div>
     <div class="xl:px-6 h-[600px]">
       <div data-aos="fade-down"
-        class="h-full rounded-b-xl bg-[url(/images/about1.jpg)] bg-center bg-cover bg-no-repeat filter brightness-150"
+        class="h-full rounded-b-3xl bg-[url(/images/about1.jpg)] bg-center bg-cover bg-no-repeat filter brightness-150"
       />
     </div>
 
@@ -13,7 +13,7 @@
     </div>
 
     <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-x-44 gap-y-12 container">
-      <div class="text-lg xl:pr-24">
+      <div class="text-lg xl:pr-24 text-brand-secondary">
         <p v-html="$t('aboutus.p1')">
         </p>
         <p class="mt-6" v-html="$t('aboutus.p2')">
@@ -34,51 +34,51 @@
 
     <div class="mt-24 container">
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6" data-aos="fade-right">
-        <div class="xl:col-start-3 xl:col-span-2">
-          <h3 class="text-xl">{{$t('aboutus.cta1_q')}}</h3>
+        <div class="xl:col-start-3 xl:col-span-4">
+          <h3 class="text-3xl text-brand-secondary">{{$t('aboutus.cta1_q')}}</h3>
           <nuxt-link class="mt-4 button-primary" :to="localePath('/for-university')"
             >{{$t('discover')}}</nuxt-link
           >
         </div>
-        <div class="xl:col-span-6 xl:col-start-6">
-          <h4 class="underline text-bold text-3xl">
+        <div class="xl:col-span-4 xl:col-start-8">
+          <h4 class="text-bold text-xl">
             {{$t('aboutus.cta1_title')}}
           </h4>
-          <p class="mt-6">
+          <p class="mt-6 text-brand-secondary">
             {{$t('aboutus.cta1_p')}}
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
-        <div class="xl:col-start-3 xl:col-span-2">
-          <h3 class="text-xl">{{$t('aboutus.cta2_q')}}</h3>
+        <div class="xl:col-start-3 xl:col-span-4">
+          <h3 class="text-3xl text-brand-secondary">{{$t('aboutus.cta2_q')}}</h3>
           <nuxt-link class="mt-4 button-primary" :to="localePath('/for-landlords')"
             >{{$t('discover')}}</nuxt-link
           >
         </div>
-        <div class="xl:col-span-6 xl:col-start-6">
-          <h4 class="underline text-bold text-3xl">
+        <div class="xl:col-span-4 xl:col-start-8">
+          <h4 class="text-bold text-xl">
             {{$t('aboutus.cta2_title')}}
           </h4>
-          <p class="mt-6">
+          <p class="mt-6 text-brand-secondary">
             {{$t('aboutus.cta2_p')}}
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
-        <div class="xl:col-start-3 xl:col-span-2">
-          <h3 class="text-xl">{{$t('aboutus.cta3_q')}}</h3>
+        <div class="xl:col-start-3 xl:col-span-4">
+          <h3 class="text-3xl text-brand-secondary">{{$t('aboutus.cta3_q')}}</h3>
           <nuxt-link class="mt-4 button-primary" :to="localePath('/for-students')"
             >{{$t('discover')}}</nuxt-link
           >
         </div>
-        <div class="xl:col-span-6 xl:col-start-6">
-          <h4 class="underline text-bold text-3xl">
+        <div class="xl:col-span-4 xl:col-start-8">
+          <h4 class="text-bold text-xl">
             {{$t('aboutus.cta3_title')}}
           </h4>
-          <p class="mt-6">
+          <p class="mt-6 text-brand-secondary">
             {{$t('aboutus.cta3_p')}}
           </p>
         </div>

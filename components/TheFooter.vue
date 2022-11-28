@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="bg-black text-white py-12">
+    <div class="bg-brand-primary text-white py-12">
       <div class="grid grid-cols-1 xl:grid-cols-2 container">
-        <nuxt-img src="/images/logo.svg" />
+        <img src="/images/Logo_BBN(dark).svg" >
         <div class="grid grid-cols-2 gap-4 mt-8 xl:mt-0">
           <div>
             <nuxt-link to="/">About us</nuxt-link>

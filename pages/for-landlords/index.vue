@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="mt-12 container">
-      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">{{$t('landlords.intro')}}</h1>
+      <h1 class="text-4xl xl:w-2/3 xl:text-7xl">{{$t('landlords.intro')}}</h1>
 
-      <div class="mt-24 grid grid-cols-1 xl:grid-cols-2 gap-44">
-        <div class="text-lg">
+      <div class="mt-24 xl:w-2/3">
+        <div class="text-lg text-brand-secondary">
           <p v-html="$t('landlords.p1')">
           </p>
           <p class="mt-6" v-html="$t('landlords.p2')">
@@ -26,22 +26,22 @@
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
           <p>01.</p>
           <h3 class="text-2xl">{{$t('landlords.list1_title')}}</h3>
-          <p class="text-lg">{{$t('landlords.list1_p')}}</p>
+          <p class="text-lg text-brand-secondary">{{$t('landlords.list1_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
           <p>02.</p>
           <h3 class="text-2xl">{{$t('landlords.list2_title')}}</h3>
-          <p class="text-lg">{{$t('landlords.list2_p')}}</p>
+          <p class="text-lg text-brand-secondary">{{$t('landlords.list2_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
           <p>03.</p>
           <h3 class="text-2xl">{{$t('landlords.list3_title')}}</h3>
-          <p class="text-lg">{{$t('landlords.list3_p')}}</p>
+          <p class="text-lg text-brand-secondary">{{$t('landlords.list3_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
           <p>04.</p>
           <h3 class="text-2xl">{{$t('landlords.list4_title')}}</h3>
-          <p class="text-lg">{{$t('landlords.list4_p')}}</p>
+          <p class="text-lg text-brand-secondary">{{$t('landlords.list4_p')}}</p>
         </div>
       </div>
     </div>
@@ -71,8 +71,8 @@
     </section>
 
     <section class="mt-24 py-12 container">
-      <div class="flex justify-center items-center flex-col gap-4">
-        <h3 class="text-2xl text-center" data-aos="fade-up">{{$t('contact_us')}}</h3>
+      <div class="flex justify-center items-center flex-col gap-4 text-black">
+        <h3 class="text-3xl text-center uppercase" data-aos="fade-up">{{$t('contact_us')}}</h3>
         <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>

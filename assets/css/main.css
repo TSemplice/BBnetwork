@@ -19,7 +19,7 @@
   }
 
   html {
-    @apply font-primary text-black font-normal bg-white;
+    @apply font-primary text-brand-primary font-normal bg-white;
   }
 
   svg {
@@ -67,19 +67,19 @@
 
 @layer components {
   .button-primary {
-    @apply bg-brand-secondary text-gray-300 transition-all border border-brand-secondary px-6 font-bold inline-flex justify-center z-0 items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:border after:border-brand-secondary after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-brand-secondary after:bg-center after:bg-no-repeat
-    hover:bg-white hover:after:bg-white hover:border hover:after:border hover:border-brand-secondary hover:after:border-brand-secondary after:transition-all hover:text-brand-secondary;
+    @apply bg-brand-primary text-gray-300 transition-all border border-brand-primary px-6 font-bold inline-flex justify-center z-0 items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:border after:border-brand-primary after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-brand-primary after:bg-center after:bg-no-repeat
+    hover:bg-white hover:after:bg-white hover:border hover:after:border hover:border-brand-primary hover:after:border-brand-primary after:transition-all hover:text-brand-primary;
   }
   .button-primary-simple {
-    @apply bg-brand-secondary text-gray-300 border border-brand-secondary transition-all px-6 font-bold inline-flex z-0 justify-center items-center rounded-full relative h-12
-    hover:bg-white hover:border hover:border-brand-secondary hover:text-brand-secondary;
+    @apply bg-brand-primary text-gray-300 border border-brand-primary transition-all px-6 font-bold inline-flex z-0 justify-center items-center rounded-full relative h-12
+    hover:bg-white hover:border hover:border-brand-primary hover:text-brand-primary;
   }
 }
 
 @layer utilities {
   .text-outline {
     @apply text-white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #30279A, 1px -1px 0 #30279A, -1px 1px 0 #30279A, 1px 1px 0 #30279A;
   }
 }
 
