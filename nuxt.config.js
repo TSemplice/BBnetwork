@@ -29,13 +29,26 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image"],
+  buildModules: [
+    "@nuxt/postcss8",
+    "@nuxt/image",
+    "@/modules/sitemapRouteGenerator",
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     "@nuxtjs/prismic",
+    "@nuxtjs/sitemap",
+    [
+      "@nuxtjs/robots",
+      {
+        UserAgent: "*",
+        Allow: "/",
+        Sitemap: "https://bb.network/sitemap.xml",
+      },
+    ],
     [
       "@nuxtjs/i18n",
       {
