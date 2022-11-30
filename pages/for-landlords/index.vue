@@ -66,7 +66,7 @@
           <p class="text-xl">Domande sui servizi offerti da BBNetwork</p>
         </div>
 
-        <Accordion :contents="contents" />
+        <Accordion v-if="false" :contents="contents" />
       </div>
     </section>
 
