@@ -1,34 +1,58 @@
 <template>
   <div class="sticky w-full z-40 top-0 left-0 transition-[top]" id="navbar">
     <div
-      class="desktop-nav bg-white h-14 xl:h-12 transition-all px-4 xl:px-6 py-4 flex justify-between items-center"
+      class="desktop-nav bg-white transition-all px-4 xl:px-12 py-4 flex justify-between items-center"
     >
       <nuxt-link
         :to="localePath('/')"
         @click="toggleMenu"
-        class="!bg-transparent"
+        class="!bg-transparent inline-block w-[fit-content]"
       >
         <img
           src="/images/Logo_BBN(light).svg"
-          class="h-auto w-1/2 xl:h-full xl:w-auto"
+          :class="[$style.logo, `h-auto w-[80%] xl:w-auto`]"
         />
       </nuxt-link>
 
-      <div class="nav hidden xl:flex items-center gap-6 h-full">
-        <nuxt-link :to="localePath('about-us')">ABOUT US</nuxt-link>
-        <nuxt-link :to="localePath('for-university')">FOR UNIVERSITY</nuxt-link>
-        <nuxt-link :to="localePath('for-landlords')">FOR LANDLORD</nuxt-link>
-        <nuxt-link :to="localePath('for-students')">FOR STUDENTS</nuxt-link>
-        <nuxt-link :to="localePath('apartments')">APARTMENTS</nuxt-link>
-        <nuxt-link :to="localePath('contacts')">CONTACTS</nuxt-link>
-        <div class="flex pl-8 gap-2 items-center font-normal" style="font-weight: 400">
-          <nuxt-link style="font-weight: 400" :to="switchLocalePath('it')">IT</nuxt-link>
+      <div :class="[$style.list, `nav hidden xl:flex items-center gap-10 h-full`]">
+        <nuxt-link :to="localePath('about-us')">
+          <span>
+            ABOUT US
+          </span>
+        </nuxt-link>
+        <nuxt-link :to="localePath('for-university')">
+          <span>
+            FOR UNIVERSITY
+          </span>
+        </nuxt-link>
+        <nuxt-link :to="localePath('for-landlords')">
+          <span>
+            FOR LANDLORD
+          </span>
+        </nuxt-link>
+        <nuxt-link :to="localePath('for-students')">
+          <span>
+            FOR STUDENTS
+          </span>
+        </nuxt-link>
+        <nuxt-link :to="localePath('apartments')">
+          <span>
+            APARTMENTS
+          </span>
+        </nuxt-link>
+        <nuxt-link :to="localePath('contacts')">
+          <span>
+            CONTACTS
+          </span>
+        </nuxt-link>
+        <div :class="[$style.langs, `flex pl-20 gap-2 items-center font-normal`]" style="font-weight: 400">
+          <nuxt-link :to="switchLocalePath('it')">IT</nuxt-link>
           <span class="text-2xl text-black">|</span>
-          <nuxt-link style="font-weight: 400" :to="switchLocalePath('en')">EN</nuxt-link>
+          <nuxt-link :to="switchLocalePath('en')">EN</nuxt-link>
         </div>
       </div>
 
-      <div class="flex items-center xl:hidden gap-4" @click="toggleMenu">
+      <div class="flex items-center xl:hidden gap-4 flex-block" @click="toggleMenu">
         <span v-if="!isMenuOpen">MENU</span>
         <span v-else>CLOSE</span>
         <nuxt-img src="/images/menu.svg" class="w-8" v-if="!isMenuOpen" />
@@ -53,7 +77,7 @@
           <nuxt-link :to="localePath('contacts')">Contacts</nuxt-link>
         </div>
         <div class="flex flex-col gap-4 justify-between">
-          <div class="flex gap-2 container" @click="toggleMenu">
+          <div :class="[$style.langs, `flex gap-1 container`]" @click="toggleMenu">
             <nuxt-link :to="switchLocalePath('it')">IT</nuxt-link>
             <span class="text-2xl text-white">|</span>
             <nuxt-link :to="switchLocalePath('en')">EN</nuxt-link>
@@ -107,19 +131,74 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+
 .desktop-nav a {
   @apply text-brand-primary uppercase font-bold;
 }
 .mobile-nav a {
   @apply text-white text-3xl font-bold;
 }
-.desktop-nav .nuxt-link-active {
+/* .desktop-nav .nuxt-link-active {
   @apply bg-black text-white;
 }
 .desktop-nav .nuxt-link-active{
   @apply underline bg-transparent text-brand-primary;
-} 
+}
 .mobile-nav .nuxt-link-active {
   @apply underline bg-transparent text-white;
+} */
+</style>
+
+<style lang="postcss" module>
+.list > a {
+  @apply text-sm
+    leading-6
+    relative
+    flex
+    justify-center;
+
+  & span {
+    @apply relative;
+
+    z-index: 1;
+    transition: all 0.8s;
+  }
+
+  &::before {
+    @apply absolute
+      top-[-1px]
+      w-[125%]
+      h-full
+      bg-brand-primary;
+
+    content: '';
+    z-index: 0;
+    transform-origin: center bottom;
+    transform: scaleY(0);
+    transition: all 0.8s;
+  }
+
+  &:global(.nuxt-link-exact-active) {
+    @apply text-brand-light
+      pointer-events-none;
+
+    &::before {
+      transform: scaleY(1);
+    }
+  }
+}
+
+:global(.desktop-nav) div.langs > a {
+  @apply text-xs
+    leading-6
+    font-normal;
+
+  &:global(.nuxt-link-exact-active) {
+    @apply font-bold;
+  }
+}
+
+img.logo {
+  @apply max-w-[fit-content];
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="mt-12 container">
+      <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('landlords.subtitle')}}</p>
       <h1 class="text-4xl xl:w-2/3 xl:text-7xl">{{$t('landlords.intro')}}</h1>
 
       <div class="mt-24 xl:w-2/3">

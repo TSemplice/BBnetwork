@@ -1,12 +1,13 @@
 <template>
   <div>
-    <div class="xl:px-6 h-[600px]">
+    <div class="xl:px-12 h-[600px]">
       <div data-aos="fade-down"
         class="h-full rounded-b-xl bg-[url(/images/contacts1.jpg)] bg-center bg-cover bg-no-repeat"
       />
     </div>
 
     <div class="mt-12 container">
+      <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('contacts.subtitle')}}</p>
       <h1 class="text-4xl xl:w-1/2 xl:text-7xl">BB Network, leaders in Rome student housing.</h1>
 
       <div class="mt-12">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="xl:px-6 h-[600px]">
+    <div class="xl:px-12 h-[600px]">
       <div data-aos="fade-down"
         class="h-full rounded-b-xl bg-[url(/images/apartments1.jpg)] bg-center bg-cover bg-no-repeat"
       />
