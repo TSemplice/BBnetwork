@@ -10,9 +10,9 @@ export default {
   },
   home: {
     intro1: `BB Network, leaders in European student housing.`,
-    intro2: `We have been connecting universities with property`,
-    intro3: `for over twenty years.`,
-    intro4: `We provide comfortable study abroad accommodation in major European cities.`,
+    intro2: `Leaders in international student housing`,
+    intro3: `throughout Europe for over twenty years.We provide comfortable `,
+    intro4: `study abroad accommodation in major European cities.`,
     p: `BB Network offers 3 distinct services related to student housing connecting universities, landlords and students.`,
     cta1: `Are you a university looking for available homes for students?`,
     cta2: `Are you looking to rent your apartment to responsible students?`,
