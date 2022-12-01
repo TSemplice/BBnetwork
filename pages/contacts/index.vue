@@ -8,18 +8,18 @@
 
     <div class="mt-12 container">
       <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('contacts.subtitle')}}</p>
-      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">BB Network, leaders in Rome student housing.</h1>
+      <h1 class="text-4xl xl:w-1/2 xl:text-7xl">{{$t('contacts.intro')}}</h1>
 
       <div class="mt-12">
         <p class="font-bold">BB Network srl</p>
-        <p class="text-brand-dark">Piazzale Gregorio VII 39</p>
+        <p class="text-brand-dark">Via Aurelia 102</p>
         <p class="text-brand-dark">00165 Roma</p>
-        <a href="https://goo.gl/maps/87Q1TSopykn3LxkZA" target="_blank" class="font-bold underline">COME RAGGIUNGERCI</a>
+        <a href="https://goo.gl/maps/87Q1TSopykn3LxkZA" target="_blank" class="font-bold underline">{{$t('reach')}}</a>
       </div>
 
       <div class="mt-12">
         <p><span class="text-brand-dark">E.</span> <a class="font-bold underline" href="mailto:info@bb.network">INFO@BB.NETWORK</a> </p>
-        <p><span class="text-brand-dark">T.</span> <a class="font-bold underline" href="tel:+39063334567">+39 063334567</a> </p>
+        <p><span class="text-brand-dark">T.</span> <a class="font-bold underline" href="tel:+39063334455">+39 063334455</a> </p>
       </div>
     </div>
   </div>

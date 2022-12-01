@@ -101,16 +101,16 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
-    // icon: {
-    //   fileName: `app-icon.png`,
-    // },
-    // manifest: {
-    //   name: "RETROSPETTIVI - Eyewear Explorers",
-    //   short_name: "RETROSPETTVI",
-    //   description: "RETROSPETTIVI Eyewear Shop",
-    //   background_color: "#F0F4FD",
-    //   theme_color: "#001683",
-    // },
+    icon: {
+      fileName: `favicon.png`,
+    },
+    manifest: {
+      name: "BB Network, leaders in European student housing.",
+      short_name: "BB Network",
+      description: "BB Network, leaders in European student housing.",
+      background_color: "#F0FF3D",
+      theme_color: "#30279A",
+    },
     workbox: {
       enabled: false,
     },

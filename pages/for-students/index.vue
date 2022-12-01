@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="mt-12 container">
-      <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('forStudents.subtitle')}}</p>
-      <h1 class="text-4xl xl:w-2/3 xl:text-7xl">Cerchi degli alloggi per i tuoi studenti?</h1>
+      <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('students.subtitle')}}</p>
+      <h1 class="text-4xl xl:w-[80%] xl:text-7xl">{{$t('students.intro')}}</h1>
 
       <div class="mt-24 xl:w-2/3">
         <div class="text-lg text-brand-secondary">
@@ -21,27 +21,27 @@
     />
 
     <div class="mt-24 container">
-      <h3 data-aos="fade-right" class="text-4xl uppercase lg:w-1/2">{{$t('students.list_title')}}</h3>
+      <h3 data-aos="fade-right" class="text-4xl lg:w-1/2">{{$t('students.list_title')}}</h3>
 
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40 gap-y-12 mt-12">
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
           <p>01.</p>
-          <h3 class="text-2xl">{{$t('students.list1_title')}}</h3>
+          <h3 class="text-2xl font-bold">{{$t('students.list1_title')}}</h3>
           <p class="text-lg text-brand-secondary">{{$t('students.list1_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
           <p>02.</p>
-          <h3 class="text-2xl">{{$t('students.list2_title')}}</h3>
+          <h3 class="text-2xl font-bold">{{$t('students.list2_title')}}</h3>
           <p class="text-lg text-brand-secondary">{{$t('students.list2_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
           <p>03.</p>
-          <h3 class="text-2xl">{{$t('students.list3_title')}}</h3>
+          <h3 class="text-2xl font-bold">{{$t('students.list3_title')}}</h3>
           <p class="text-lg text-brand-secondary">{{$t('students.list3_p')}}</p>
         </div>
         <div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="400">
           <p>04.</p>
-          <h3 class="text-2xl">{{$t('students.list4_title')}}</h3>
+          <h3 class="text-2xl font-bold">{{$t('students.list4_title')}}</h3>
           <p class="text-lg text-brand-secondary">{{$t('students.list4_p')}}</p>
         </div>
       </div>
@@ -73,7 +73,7 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4 text-black">
-        <h3 class="text-3xl text-center uppercase" data-aos="fade-up">{{$t('contact_us')}}</h3>
+        <h3 class="text-3xl text-center xl:text-[36px] xl:leading[43px] xl:max-w-[471px] tracking-[0.04em] font-bold" data-aos="fade-up">{{$t('contact_us')}}</h3>
         <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>

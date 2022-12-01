@@ -1,12 +1,14 @@
 export default {
   discover: `Scopri di piú`,
+  learn: `Scopri di piú`,
   contact_us: `Contattaci per saperne di piú`,
+  contact_us_2: 'Contattaci per saperne di piú',
+  contact_us_3: 'Contattaci per saperne di piú',
   email_us: `Invia un'email`,
+  reach: 'ho to reach',
   contacts: {
-    subtitle: 'contact us'
-  },
-  forStudents: {
-    subtitle: 'for students'
+    subtitle: 'contact us',
+    intro: 'BB Network, leaders in Barcelona & Rome student housing.'
   },
   home: {
     intro1: `BB Network, leader negli alloggi per studenti a Roma e a Barcellona.`,
@@ -72,6 +74,7 @@ BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
     list4_p: `Gli studenti hanno accesso diretto al nostro team di professionisti, disponibili 24 ore su 24 per rispondere a qualunque necessità inerente manutenzione, pulizia e interventi di riparazione. Il tuo appartamento verrà inoltre assicurato per prevenire ed essere protetto da circostanze imprevedibili.`,
   },
   students: {
+    subtitle: `For Student - International student housing`,
     intro: `Alloggi per studenti a Roma e Barcellona`,
     p1: `Gli appartamenti BB Network sono equipaggiati con tutti i comfort per rendere la tua permanenza il più piacevole possibile.`,
     p2: `Le case sono in posizione centrale e includono la rete wifi, il telefono fisso per ricevere chiamate internazionali, la tv, la lavatrice e molto altro.`,

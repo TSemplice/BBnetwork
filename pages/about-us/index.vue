@@ -42,7 +42,7 @@
             :to="localePath('/for-university')"
           >
             <span>
-              {{$t('discover')}}
+              {{$t('learn')}}
             </span>
             <span>
               <Arrow />
@@ -50,7 +50,7 @@
           </nuxt-link>
         </div>
         <div class="xl:col-span-4 xl:col-start-9">
-          <h4 class="text-bold text-xl">
+          <h4 class="font-bold text-xl xl:text-[36px] leading-[43px]">
             {{$t('aboutus.cta1_title')}}
           </h4>
           <p class="mt-6 text-brand-secondary">
@@ -67,7 +67,7 @@
             :to="localePath('/for-landlords')"
           >
             <span>
-              {{$t('discover')}}
+              {{$t('learn')}}
             </span>
             <span>
               <Arrow />
@@ -75,7 +75,7 @@
           </nuxt-link>
         </div>
         <div class="xl:col-span-4 xl:col-start-9">
-          <h4 class="text-bold text-xl">
+          <h4 class="font-bold text-xl xl:text-[36px] leading-[43px]">
             {{$t('aboutus.cta2_title')}}
           </h4>
           <p class="mt-6 text-brand-secondary">
@@ -92,7 +92,7 @@
             :to="localePath('/for-students')"
           >
             <span>
-              {{$t('discover')}}
+              {{$t('learn')}}
             </span>
             <span>
               <Arrow />
@@ -100,7 +100,7 @@
           </nuxt-link>
         </div>
         <div class="xl:col-span-4 xl:col-start-9">
-          <h4 class="text-bold text-xl">
+          <h4 class="font-bold text-xl xl:text-[36px] leading-[43px]">
             {{$t('aboutus.cta3_title')}}
           </h4>
           <p class="mt-6 text-brand-secondary">

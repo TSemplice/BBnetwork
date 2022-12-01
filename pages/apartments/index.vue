@@ -25,7 +25,7 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4 text-black">
-        <h3 class="text-3xl text-center uppercase" data-aos="fade-up">{{$t('contact_us')}}</h3>
+        <h3 class="text-3xl text-center xl:text-[36px] xl:leading[43px] xl:max-w-[471px] tracking-[0.04em] font-bold" data-aos="fade-up">{{$t('contact_us')}}</h3>
         <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>
