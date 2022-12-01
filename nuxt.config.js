@@ -32,7 +32,6 @@ export default {
   buildModules: [
     "@nuxt/postcss8",
     "@nuxt/image",
-    "@/modules/sitemapRouteGenerator",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
