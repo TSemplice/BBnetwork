@@ -2,6 +2,12 @@ export default {
   discover: `Scopri di piú`,
   contact_us: `Contattaci per saperne di piú`,
   email_us: `Invia un'email`,
+  contacts: {
+    subtitle: 'contact us'
+  },
+  forStudents: {
+    subtitle: 'for students'
+  },
   home: {
     intro1: `BB Network, leader negli alloggi per studenti a Roma e a Barcellona.`,
     intro2: `Da oltre venti anni mettiamo in contatto i proprietari di casa e le università`,
@@ -13,10 +19,11 @@ export default {
     cta3: `Sei uno studente alla ricerca di un alloggio confortevole con assistenza 24 ore su 24?`,
   },
   aboutus: {
+    subtitle: `about us`,
     intro: `“I migliori alloggi per studenti di Roma ti danno il benvenuto. Per sentirsi a casa, lontano da casa”`,
     p1: `Hai scelto di venire a studiare in una delle città più belle del mondo, Roma! Goditi al massimo la tua permanenza grazie a uno dei leader europei nella ricerca di alloggi per studenti.`,
-    p2: `BB Network offre alloggi per studenti a Roma da oltre vent’anni. Questo  lo rende uno dei leader nella ricerca di alloggi di qualità per quegli  studenti stranieri che hanno scelto di venire a studiare nella città eterna. Siamo partner di alcune tra le più rinomate università di Roma e sappiamo individuare gli appartamenti nel centro di Roma più puliti, sicuri e accoglienti, in modo da offrire agli studenti una vincente esperienza all’estero. 
-BB Network offre soluzioni anche nel resto d’Italia ed in Europa. 
+    p2: `BB Network offre alloggi per studenti a Roma da oltre vent’anni. Questo  lo rende uno dei leader nella ricerca di alloggi di qualità per quegli  studenti stranieri che hanno scelto di venire a studiare nella città eterna. Siamo partner di alcune tra le più rinomate università di Roma e sappiamo individuare gli appartamenti nel centro di Roma più puliti, sicuri e accoglienti, in modo da offrire agli studenti una vincente esperienza all’estero.
+BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
 `,
     p3: `Il nostro team di supporto bilingue è reperibile 24 ore su 24 ed è preparato a risolvere qualunque inconveniente possa insorgere presso le abitazioni dei nostri studenti, a qualunque ora del giorno.`,
     cta1_q: `Sei un’università?`,
@@ -33,6 +40,7 @@ BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
     intro: `BB Network gestisce alloggi di qualità per studenti in Italia e in Spagna. I nostri alloggi vengono selezionati con cura in base alla posizione, all’ampiezza e alla comodità delle camere da letto, dei bagni, delle cucine e delle aree comuni. Le nostre proprietà si trovano a Trastevere, un affascinante rione lastricato con il tipico sampietrino romano e noto per la sua vitale atmosfera notturna, così come in altre zone rinomate di Roma tra cui l'elegante Prati, il centro storico e l’area residenziale di San Giovanni.`,
   },
   university: {
+    subtitle: 'FOR universities - University off campus housing',
     intro: `Alloggi fuori dal campus`,
     p1: `Alloggi per studenti a Roma e Barcellona con servizio all-inclusive.`,
     p2: `BB Network procura alloggi spaziosi ed accoglienti per studenti internazionali da oltre 20 anni. Offriamo contratti comprensivi di servizio accoglienza, gestione e manutenzione a 360°,con servizio completo per venire incontro alle esigenze di studenti e proprietari di casa.`,
@@ -48,6 +56,7 @@ BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
     list4_p: `I nostri appartamenti sono tutti dotati sensori di fumo e CO2, estintori e kit di primo soccorso. Il nostro staff è sempre reperibile in caso di emergenza. La nostra priorità numero uno è di assicurare agli studenti comfort e sicurezza nelle loro case lontano da casa.`,
   },
   landlords: {
+    subtitle: 'Rent your apartment to international university students.',
     intro: `Affitta la tua proprietà. Offri case per studenti a Roma e a Barcellona.`,
     p1: `Proponi in affitto il tuo appartamento a studenti di università internazionali. BB Network offre servizi per chi vuole affittare le proprie proprietà immobiliari.`,
     p2: `Se hai un appartamento che vorresti affittare  nel centro di Roma o di Barcellona, affida a noi la ricerca di un inquilino a breve termine adatto alle tue esigenze.`,

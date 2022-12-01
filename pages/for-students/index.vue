@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="mt-12 container">
+      <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('forStudents.subtitle')}}</p>
       <h1 class="text-4xl xl:w-2/3 xl:text-7xl">Cerchi degli alloggi per i tuoi studenti?</h1>
 
       <div class="mt-24 xl:w-2/3">
@@ -16,7 +17,7 @@
     </div>
 
     <div data-aos="zoom-in"
-      class="mt-24 h-[500px] bg-[url(/images/students1.png)] bg-center bg-cover"
+      class="mt-24 pb-[41.6%] bg-[url(/images/students1.png)] bg-center bg-cover"
     />
 
     <div class="mt-24 container">

@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="mt-12 container">
+      <p class="uppercase mb-6 text-[16px] leading-[20px]">{{$t('university.subtitle')}}</p>
       <h1 class="text-4xl xl:w-2/3 xl:text-7xl">
         {{$t('university.intro')}}
       </h1>
 
-      <div class="mt-24 xl:w-2/3">
+      <div class="mt-24 xl:w-[80%]">
         <div class="text-lg text-brand-secondary">
           <p v-html="$t('university.p1')"></p>
           <p class="mt-6" v-html="$t('university.p2')"></p>
@@ -16,7 +17,7 @@
 
     <div
       data-aos="zoom-in"
-      class="mt-24 h-[500px] bg-[url(/images/university1.jpg)] bg-center bg-cover"
+      class="mt-24 pb-[41.6%] bg-[url(/images/university1.jpg)] bg-center bg-cover"
     />
 
     <div class="mt-24 container">
@@ -79,7 +80,7 @@
 
     <section class="mt-24 py-12 container">
       <div class="flex justify-center items-center flex-col gap-4 text-black">
-        <h3 class="text-3xl text-center uppercase" data-aos="fade-up">{{$t('contact_us')}}</h3>
+        <h3 class="text-3xl text-center" data-aos="fade-up">{{$t('contact_us')}}</h3>
         <a href="mailto:" class="button-primary-simple" data-aos="fade-up" data-aos-delay="600">{{$t('email_us')}}</a>
       </div>
     </section>

@@ -2,6 +2,12 @@ export default {
   discover: `Lear more`,
   contact_us: `Contact us for more info`,
   email_us: `Email us`,
+  contacts: {
+    subtitle: 'contact us'
+  },
+  forStudents: {
+    subtitle: 'for students'
+  },
   home: {
     intro1: `BB Network, leaders in European student housing.`,
     intro2: `We have been connecting universities with property`,
@@ -13,6 +19,7 @@ export default {
     cta3: `Are you a student looking for comfortable student housing with 24/7 support?`,
   },
   aboutus: {
+    subtitle: 'about us',
     intro: `“Welcome to Rome student housing - your home away from home”`,
     p1: `You’ve decided to study in one of the most beautiful cities in the world, Rome! Enjoy your stay to the fullest with one of the leaders in European student accommodation.`,
     p2: `BB Network has provided student housing in Rome for over 20 years, making it one of the leaders in quality accommodation for international students studying in the eternal city. We are partnered with some of the most well known universities of Rome and prides itself on finding clean, safe and comfortable apartments in central Rome for students to have a successful experience abroad. BB Network also offers accommodation throughout the rest of Italy and Europe as well. `,
@@ -46,6 +53,7 @@ export default {
     list4_p: `All of our apartments are equipped with smoke detectors, fire extinguishers, CO2 detectors and first aid kits. We also have a staff on call for emergencies. Our number one priority is to ensure students are safe and comfortable while at home away from home.`,
   },
   landlords: {
+    subtitle: 'Rent your apartment to international university students.',
     intro: `Rent your apartment to international university students.`,
     p1: `BB Network offers services for property owners who are looking to rent their accommodation.  If you have an apartment you’d like to rent in Rome or Barcelona city center, leave it to us to find a suitable short term tenant.`,
     p2: `Our staff aims to make the entire rental experience as easy as possible. We take care of the process from start to finish. You set the conditions of use and we find the students to suit your needs and property type.`,
@@ -92,6 +100,7 @@ export default {
         "Specializing in study abroad housing for over 20 years. Fully furnished accommodation, 24/7 customer support & cleaning services. Short- and long-term rentals.",
     },
     university: {
+      subtitle: 'FOR universities - University off campus housing',
       title:
         "Study abroad, international student housing services | BB Network",
       description:
