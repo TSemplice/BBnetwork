@@ -67,12 +67,26 @@
 
 @layer components {
   .button-primary {
-    @apply bg-brand-primary text-gray-300 transition-all border border-brand-primary px-6 font-bold inline-flex justify-center z-0 items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:border after:border-brand-primary after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-brand-primary after:bg-center after:bg-no-repeat
+    @apply bg-brand-primary text-brand-light border border-brand-primary px-6 font-bold inline-flex justify-center z-0 items-center rounded-full relative h-12 after:absolute after:top-0 after:left-full after:h-12 after:w-12 after:rounded-full after:ml-2 after:border after:border-brand-primary after:bg-[url('/images/arrow.svg')] after:content-[''] after:bg-brand-primary after:bg-center after:bg-no-repeat
     hover:bg-white hover:after:bg-white hover:border hover:after:border hover:border-brand-primary hover:after:border-brand-primary after:transition-all hover:text-brand-primary;
+
+    transition: all 0.4s;
+
+    &.aos-init.aos-animate[data-aos][data-aos-delay="600"] {
+      transition: all 0.4s;
+      transition-delay: 0;
+    }
   }
   .button-primary-simple {
-    @apply bg-brand-primary text-gray-300 border border-brand-primary transition-all px-6 font-bold inline-flex z-0 justify-center items-center rounded-full relative h-12
+    @apply bg-brand-primary text-brand-light border border-brand-primary px-6 font-bold inline-flex z-0 justify-center items-center rounded-full relative h-12
     hover:bg-white hover:border hover:border-brand-primary hover:text-brand-primary;
+
+    transition: all 0.4s;
+
+    &.aos-init.aos-animate[data-aos][data-aos-delay="600"] {
+      transition: all 0.4s;
+      transition-delay: 0;
+    }
   }
 }
 
@@ -87,10 +101,10 @@
   opacity: 0;
 }
 .page-enter-active {
-  transition: all 0.3s ease;
+  transition: all 0.8s;
 }
 .page-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.8s;
 }
 .page-leave-to {
   opacity: 0;
@@ -132,6 +146,6 @@
   background-color: white !important;
   border-radius: 1rem;
   margin: 0 1rem;
-  transition: all 0.2s ease;
+  transition: all 0.8s;
   @apply shadow-md !p-2 !w-10;
 }

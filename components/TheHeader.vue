@@ -8,10 +8,11 @@
         @click="toggleMenu"
         class="!bg-transparent inline-block w-[fit-content]"
       >
-        <img
+        <!-- <img
           src="/images/Logo_BBN(light).svg"
           :class="[$style.logo, `h-auto w-[80%] xl:w-auto`]"
-        />
+        /> -->
+        <HeaderLogo :class="[$style.logo, `h-auto w-[80%] xl:w-[344px]`]" />
       </nuxt-link>
 
       <div :class="[$style.list, `nav hidden xl:flex items-center gap-10 h-full`]">

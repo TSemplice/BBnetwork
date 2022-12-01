@@ -17,7 +17,7 @@
     </div>
 
     <div data-aos="zoom-in"
-      class="mt-24 h-[500px] bg-[url(/images/landlords1.png)] bg-center bg-cover"
+      class="mt-24 pb-[41.6%] bg-[url(/images/landlords1.png)] bg-center bg-cover"
     />
 
     <div class="mt-24 container">
@@ -138,7 +138,7 @@ export default {
     this.$lax.addDriver(
       "scrollY1",
       () => {
-        return window.scrollY/1.8;
+        return window.scrollY/1.2;
       },
       {
         inertiaEnabled: true,
@@ -147,7 +147,7 @@ export default {
     this.$lax.addDriver(
       "scrollY2",
       () => {
-        return window.scrollY/1.8;
+        return window.scrollY/1.2;
       },
       {
         inertiaEnabled: true,
@@ -156,7 +156,7 @@ export default {
     this.$lax.addDriver(
       "scrollY3",
       () => {
-        return window.scrollY/1.8;
+        return window.scrollY/1.2;
       },
       {
         inertiaEnabled: true,
@@ -169,7 +169,7 @@ export default {
         translateX: [
           ["elInY-500", "elOutY+200"],
           [-800, 0],
-          {inertia: 2}
+          {inertia: 1}
         ],
       },
     });
@@ -177,8 +177,8 @@ export default {
       scrollY2: {
         translateX: [
           ["elInY-1000", "elOutY+200"],
-          [0, -800],
-          {inertia: 2}
+          [0, -400],
+          {inertia: 1}
         ],
       },
     });
@@ -187,7 +187,7 @@ export default {
         translateX: [
           ["elInY-1300", "elOutY+200"],
           [-800, 0],
-          {inertia: 2}
+          {inertia: 1}
         ],
       },
     });

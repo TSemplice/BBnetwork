@@ -17,7 +17,7 @@
 
     <div
       data-aos="zoom-in"
-      class="mt-24 h-[500px] bg-[url(/images/university1.jpg)] bg-center bg-cover"
+      class="mt-24 pb-[41.6%] bg-[url(/images/university1.jpg)] bg-center bg-cover"
     />
 
     <div class="mt-24 container">

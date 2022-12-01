@@ -2,7 +2,7 @@
   <div>
     <div class="bg-brand-primary text-white pt-[64px] pb-[72px] xl:py-12 px-5 xl:px-0">
       <div class="grid grid-cols-1 xl:grid-cols-2 xl:px-12">
-        <img src="/images/Logo_BBN(dark).svg" >
+        <FooterLogo class="w-[277px] h-auto xl:w-[344px]"/>
         <div :class="[$style.links, `flex flex-col xl:flex-row gap-[64px] xl:gap-[122px] justify-end mt-[80px] xl:mt-0`]">
           <div :class="[$style.column]">
             <nuxt-link :to="localePath('about-us')">About us</nuxt-link>

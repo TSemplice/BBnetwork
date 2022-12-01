@@ -23,7 +23,7 @@
         </p>
       </div>
 
-      <div class="overflow-x-hidden lg:overflow-x-auto">
+      <div class="overflow-x-hidden">
         <nuxt-img
           data-aos="fade-left"
           class="mt-24 rounded-2xl"
@@ -33,15 +33,23 @@
       </div>
     </div>
 
-    <div class="mt-24 container xl:mx-12 xl:px-0">
+    <div class="mt-24 container xl:mx-0 xl:px-[120px] xl:max-w-[100%]">
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6" data-aos="fade-right">
         <div class="xl:col-start-1 xl:col-span-5">
           <h3 class="text-3xl text-brand-secondary">{{$t('aboutus.cta1_q')}}</h3>
-          <nuxt-link class="mt-4 button-primary" :to="localePath('/for-university')"
-            >{{$t('discover')}}</nuxt-link
+          <nuxt-link
+            :class="[$style.button]"
+            :to="localePath('/for-university')"
           >
+            <span>
+              {{$t('discover')}}
+            </span>
+            <span>
+              <Arrow />
+            </span>
+          </nuxt-link>
         </div>
-        <div class="xl:col-span-4 xl:col-start-8">
+        <div class="xl:col-span-4 xl:col-start-9">
           <h4 class="text-bold text-xl">
             {{$t('aboutus.cta1_title')}}
           </h4>
@@ -54,11 +62,19 @@
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
         <div class="xl:col-start-1 xl:col-span-5">
           <h3 class="text-3xl text-brand-secondary">{{$t('aboutus.cta2_q')}}</h3>
-          <nuxt-link class="mt-4 button-primary" :to="localePath('/for-landlords')"
-            >{{$t('discover')}}</nuxt-link
+          <nuxt-link
+            :class="[$style.button]"
+            :to="localePath('/for-landlords')"
           >
+            <span>
+              {{$t('discover')}}
+            </span>
+            <span>
+              <Arrow />
+            </span>
+          </nuxt-link>
         </div>
-        <div class="xl:col-span-4 xl:col-start-8">
+        <div class="xl:col-span-4 xl:col-start-9">
           <h4 class="text-bold text-xl">
             {{$t('aboutus.cta2_title')}}
           </h4>
@@ -71,11 +87,19 @@
       <div class="grid grid-cols-1 xl:grid-cols-12 gap-y-6 mt-20" data-aos="fade-right">
         <div class="xl:col-start-1 xl:col-span-5">
           <h3 class="text-3xl text-brand-secondary">{{$t('aboutus.cta3_q')}}</h3>
-          <nuxt-link class="mt-4 button-primary" :to="localePath('/for-students')"
-            >{{$t('discover')}}</nuxt-link
+          <nuxt-link
+            :class="[$style.button]"
+            :to="localePath('/for-students')"
           >
+            <span>
+              {{$t('discover')}}
+            </span>
+            <span>
+              <Arrow />
+            </span>
+          </nuxt-link>
         </div>
-        <div class="xl:col-span-4 xl:col-start-8">
+        <div class="xl:col-span-4 xl:col-start-9">
           <h4 class="text-bold text-xl">
             {{$t('aboutus.cta3_title')}}
           </h4>
@@ -123,4 +147,64 @@ export default {
 };
 </script>
 
-<style></style>
+<style module lang="postcss">
+.button {
+  @apply mt-[18px]
+    inline-block
+    flex
+    gap-2;
+
+  & > span:first-of-type {
+    @apply inline-block
+      px-6
+      py-3
+      bg-brand-primary
+      text-brand-light
+      text-[18px]
+      font-bold;
+
+    border-radius: 24px;
+    letter-spacing: 0.04em;
+    border: 1px solid #30279A;
+    transition: all 0.4s;
+  }
+
+  & > span:last-of-type {
+    @apply inline-block
+      w-[53px]
+      h-[53px]
+      flex
+      justify-center
+      items-center
+      px-3
+      bg-brand-primary;
+
+    border-radius: 100%;
+    border: 1px solid #30279A;
+    transition: all 0.4s;
+
+    & svg {
+      @apply w-[24px]
+        h-auto;
+
+      & path {
+        fill: #ffffff;
+        transition: all 0.4s;
+      }
+    }
+  }
+
+  &:hover {
+    & > span {
+      @apply bg-transparent
+        text-brand-primary;
+
+      & svg {
+        & path {
+          fill: #30279A;
+        }
+      }
+    }
+  }
+}
+</style>

@@ -12,14 +12,14 @@
 
       <div class="mt-12">
         <p class="font-bold">BB Network srl</p>
-        <p>Piazzale Gregorio VII 39</p>
-        <p>00164 Roma</p>
+        <p class="text-brand-dark">Piazzale Gregorio VII 39</p>
+        <p class="text-brand-dark">00165 Roma</p>
         <a href="https://goo.gl/maps/87Q1TSopykn3LxkZA" target="_blank" class="font-bold underline">COME RAGGIUNGERCI</a>
       </div>
 
       <div class="mt-12">
-        <p>E. <a class="font-bold underline" href="mailto:info@bb.network">INFO@BB.NETWORK</a> </p>
-        <p>T. <a class="font-bold underline" href="tel:+39063334567">+39 063334567</a> </p>
+        <p><span class="text-brand-dark">E.</span> <a class="font-bold underline" href="mailto:info@bb.network">INFO@BB.NETWORK</a> </p>
+        <p><span class="text-brand-dark">T.</span> <a class="font-bold underline" href="tel:+39063334567">+39 063334567</a> </p>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@
     </div>
 
     <div class="mt-24 container">
-      <p class="text-lg xl:text-2xl xl:leading-10 text-brand-secondary" v-html="$t('apartments.intro')">
+      <p class="text-lg xl:text-[18px] xl:leading-[28px] text-brand-secondary" v-html="$t('apartments.intro')">
       </p>
     </div>
 

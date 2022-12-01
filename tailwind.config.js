@@ -24,7 +24,8 @@ module.exports = {
           primary: `#30279A`,
           secondary: "#3A3636",
           tertiary: `#F0FF3D`,
-          light: '#FFFFFF'
+          light: '#FFFFFF',
+          dark: '#222222'
         },
       },
     },

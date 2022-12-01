@@ -28,7 +28,7 @@
 
     <div
       data-aos="zoom-in"
-      class="mt-32 h-[500px] bg-[url(/images/university1.jpg)] bg-center bg-cover"
+      class="mt-32 w-full pb-[41.6%] bg-[url(/images/university1.jpg)] bg-center bg-cover"
     />
 
     <div class="mt-32 container xl:pl-[120px] xl:pr-[120px] xl:max-w-auto xl:w-full">
