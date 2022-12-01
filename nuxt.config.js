@@ -29,10 +29,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    "@nuxt/postcss8",
-    "@nuxt/image",
-  ],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -117,6 +114,11 @@ export default {
     workbox: {
       enabled: false,
     },
+  },
+
+  sitemap: {
+    hostname: "https://bb.network",
+    i18n: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
