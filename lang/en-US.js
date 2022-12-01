@@ -38,6 +38,7 @@ export default {
     intro: `BB Network has been providing quality student accommodation in Rome and Spain for decades. Our student housing is carefully chosen based on their location, comfortable and spacious bedrooms, bathrooms, kitchens and common areas. Our properties are located in Trastevere, a charming cobblestoned lined neighborhood known for its lively nightlife, as well as other popular Rome neighborhoods such as the elegant Prati, the historic center of Rome and the central residential area of San Giovanni.`,
   },
   university: {
+    subtitle: 'University off campus housing',
     intro: `University off campus housing`,
     p1: `SStudent apartments throughout Europe - all inclusive services.`,
     p2: `BB Network has been providing spacious and comfortable student housing for international university students for over 20 years. We offer full service contracts to accommodate both students and property owners.`,

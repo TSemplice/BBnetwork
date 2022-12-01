@@ -145,7 +145,7 @@ export default {
     this.$lax.addDriver(
       "scrollY1",
       () => {
-        return window.scrollY / 1.8;
+        return window.scrollY/1.2;
       },
       {
         inertiaEnabled: true,
@@ -154,7 +154,7 @@ export default {
     this.$lax.addDriver(
       "scrollY2",
       () => {
-        return window.scrollY / 1.8;
+        return window.scrollY/1.2;
       },
       {
         inertiaEnabled: true,
@@ -163,7 +163,7 @@ export default {
     this.$lax.addDriver(
       "scrollY3",
       () => {
-        return window.scrollY / 1.8;
+        return window.scrollY/1.2;
       },
       {
         inertiaEnabled: true,
@@ -173,17 +173,29 @@ export default {
     // Add animation bindings to elements
     this.$lax.addElements(".selector1", {
       scrollY1: {
-        translateX: [["elInY-500", "elOutY+200"], [-800, 0], { inertia: 2 }],
+        translateX: [
+          ["elInY-500", "elOutY+200"],
+          [-800, 0],
+          {inertia: 1}
+        ],
       },
     });
     this.$lax.addElements(".selector2", {
       scrollY2: {
-        translateX: [["elInY-1000", "elOutY+200"], [0, -800], { inertia: 2 }],
+        translateX: [
+          ["elInY-1000", "elOutY+200"],
+          [0, -400],
+          {inertia: 1}
+        ],
       },
     });
     this.$lax.addElements(".selector3", {
       scrollY3: {
-        translateX: [["elInY-1300", "elOutY+200"], [-800, 0], { inertia: 2 }],
+        translateX: [
+          ["elInY-1300", "elOutY+200"],
+          [-800, 0],
+          {inertia: 1}
+        ],
       },
     });
   },

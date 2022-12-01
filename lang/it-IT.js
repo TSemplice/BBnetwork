@@ -40,7 +40,7 @@ BB Network offre soluzioni anche nel resto d’Italia ed in Europa.
     intro: `BB Network gestisce alloggi di qualità per studenti in Italia e in Spagna. I nostri alloggi vengono selezionati con cura in base alla posizione, all’ampiezza e alla comodità delle camere da letto, dei bagni, delle cucine e delle aree comuni. Le nostre proprietà si trovano a Trastevere, un affascinante rione lastricato con il tipico sampietrino romano e noto per la sua vitale atmosfera notturna, così come in altre zone rinomate di Roma tra cui l'elegante Prati, il centro storico e l’area residenziale di San Giovanni.`,
   },
   university: {
-    subtitle: 'FOR universities - University off campus housing',
+    subtitle: 'University off campus housing',
     intro: `Alloggi fuori dal campus`,
     p1: `Alloggi per studenti a Roma e Barcellona con servizio all-inclusive.`,
     p2: `BB Network procura alloggi spaziosi ed accoglienti per studenti internazionali da oltre 20 anni. Offriamo contratti comprensivi di servizio accoglienza, gestione e manutenzione a 360°,con servizio completo per venire incontro alle esigenze di studenti e proprietari di casa.`,
