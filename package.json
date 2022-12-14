@@ -16,6 +16,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
+    "iubenda-module": "^0.1.2",
     "lax.js": "^2.0.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
