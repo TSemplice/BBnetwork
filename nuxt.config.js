@@ -23,6 +23,8 @@ export default {
   plugins: [
     { src: "~/plugins/lax.js", ssr: false },
     { src: "~/plugins/aos.js", ssr: false },
+    '~/plugins/google-analytics.client',
+    '~/plugins/iubenda.client'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -97,7 +99,7 @@ export default {
         lazy: true,
       },
     ],
-    'iubenda-module'
+    // 'iubenda-module'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -115,56 +117,6 @@ export default {
     workbox: {
       enabled: false,
     },
-  },
-
-  iubenda: {
-    i18n: {
-      en: {
-        cookiePolicyId: 84203216
-      },
-      it: {
-        cookiePolicyId: 84203216
-      }
-    },
-    // Defaults:
-    dev: true, // Activate module in dev environment.
-    consentMode: true, // Use Google's consent mode.
-    links: {
-      enable: true, // Add script to include links to policy pages.
-      style: 'nostyle', // Add styling to links. (nostyle, white or black)
-      whiteLabel: true, // White label links.
-      embed: true // Open links in embedded popup.
-    },
-
-    // Entire iubenda configuration
-    config: {
-      siteId: 2898021, // Required
-      cookiePolicyId: 84203216, // Required
-
-      // ...all other config options. (See Iubenda cookie banner script)
-      // Example defaults:
-      lang: 'it',
-      gdprAppliesGlobally: false,
-      cookiePolicyInOtherWindow: false,
-      consentOnContinuedBrowsing: false,
-      perPurposeConsent: true,
-      banner: {
-        acceptButtonDisplay: true,
-        customizeButtonDisplay: true,
-        rejectButtonDisplay: true,
-        acceptButtonColor: '#30279A',
-        acceptButtonCaptionColor: '#E8EDED',
-        customizeButtonColor: '#191717',
-        customizeButtonCaptionColor: '#E8EDED',
-        rejectButtonColor: '#30279A',
-        rejectButtonCaptionColor: '#E8EDED',
-        closeButtonDisplay: false,
-        position: 'float-bottom-right',
-        textColor: '#252424',
-        backgroundColor: '#E8EDED',
-        backgroundOverlay: true
-      }
-    }
   },
 
   sitemap: {

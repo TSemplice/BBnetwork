@@ -20,15 +20,15 @@
       <div class="flex flex-col gap-[64px] xl:gap-0 xl:px-12 xl:flex-row justify-between mt-40">
         <div class="flex flex-col xl:flex-row gap-x-8 gap-y-6 order-last xl:order-1">
           <p class="uppercase">©2022 bbnestork srl</p>
-          <a class="uppercase" href="">Privacy Policy</a>
-          <a class="uppercase" href="">Cookie Policy</a>
-          <a class="uppercase" href="">Credits</a>
+          <a class="uppercase" :href="`https://www.iubenda.com/privacy-policy/${$i18n.locale === 'it' ? 71076652 : 68631402}`" target="_blank">Privacy Policy</a>
+          <a class="uppercase" :href="`https://www.iubenda.com/privacy-policy/${$i18n.locale === 'it' ? 71076652 : 68631402}/cookie-policy`" target="_blank">Cookie Policy</a>
+          <a class="uppercase" href="" target="_blank">Credits</a>
         </div>
 
         <div class="flex gap-8 mt-4 xl:mt-0 order-1 xl:order-last">
-          <a class="uppercase" href="">IG</a>
-          <a class="uppercase" href="">FB</a>
-          <a class="uppercase" href="">IN</a>
+          <a class="uppercase" href="" target="_blank">IG</a>
+          <a class="uppercase" href="" target="_blank">FB</a>
+          <a class="uppercase" href="" target="_blank">IN</a>
         </div>
       </div>
     </div>
